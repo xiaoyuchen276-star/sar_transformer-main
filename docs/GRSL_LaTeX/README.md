@@ -2,6 +2,22 @@
 
 本目录是独立的 GRSL 稿件，原始 `docs/ICSPS2026_LaTeX` 目录未修改。
 
+## 返修工作流程
+
+后续论文修改只编辑 `GRSL-02805-2026_Revised_Clean.tex`，用 `\rev{...}` 累积标记相对固定投稿基线的改动。Clean 模式正常显示内容；`GRSL-02805-2026_Revised_Marked.tex` 仅开启标记模式并载入同一份 Clean 源码，不独立维护正文。Marked PDF 将 `\rev{...}` 内容显示为蓝色，并附页眉说明；当前蓝色内容为修改后的数值。两份 PDF 始终使用同一份论文正文。
+
+- `revision_baseline/GRSL-02805-2026_Submitted.tex` / `.pdf`：2026-09-28 V3 投稿包的逐字节副本，作为固定比较基线，后续修改和编译均不得覆盖；来源和 SHA-256 记录在 `revision_baseline/baseline_manifest.json`。
+- `GRSL-02805-2026_Response.tex`：独立维护的逐项审稿回复。当前已完成 Reviewer 2 第 1、4 条，其余意见仍待处理。
+- 固定交付文件名：`GRSL-02805-2026_Revised_Clean.pdf`、`GRSL-02805-2026_Revised_Marked.pdf`、`GRSL-02805-2026_Response.pdf`。
+
+2026-11-10：完成 R2.1，新增表 II（第 4 页），使用作者提供的 NWPU 与真实 SAR 验证集参数扫描结果，更新 II-C、III-B 的参数说明；正文精简后，Clean 和 Marked 均保持 5 页。当前最新回复为 `GRSL-02805-2026_Response_R2_1.pdf`（第 3 页为 R2.1），因原 `Response.pdf` 被阅读器占用而另存；回复源码仍为 `GRSL-02805-2026_Response.tex`，解除占用后正常编译即可更新固定文件名。
+
+随后在 III-B 明确表 II 使用的验证图像与表 I、V 的测试图像不同。清稿已更新；标记版因原 PDF 被占用，最新文件另存为 `GRSL-02805-2026_Revised_Marked_R2_1.pdf`。两版仍为 5 页。
+
+从仓库根目录运行 `& .\docs\GRSL_LaTeX\build_revision.ps1`，编译以上三份 PDF。后续修改继续保留已有修订标记，并为新增改动添加标记；固定投稿基线不随返修更新。
+
+以下为此前工作记录。`GRSL_paper.tex` / `.pdf` 是既有工作文件，后续返修不再以它们为编辑入口；下文的旧 `build.ps1` 编译流程不用于返修交付。
+
 ## 文件
 
 - `GRSL_paper.tex` / `GRSL_paper.pdf`：主稿，**5 页，包含全部参考文献**。

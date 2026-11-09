@@ -1,0 +1,24 @@
+{
+  "manuscript_id": "GRSL-02805-2026",
+  "baseline_date": "2026-09-28",
+  "established_date": "2026-11-09",
+  "purpose": "Fixed previous-submission baseline for generating revision marks from the current clean manuscript.",
+  "source_archive": "output/pdf/GRSL_Submission/GRSL_LaTeX_V3.zip",
+  "source_archive_sha256": "2266b556022912d3655fb552aa33cd013b987b5d1f550369846b5c02f4f9e36b",
+  "provenance": "Byte-exact copy of the local September 28, 2026 V3 submission package; also matches the pre-rounding backup.",
+  "overwrite_policy": "Do not overwrite this baseline during future revisions or builds.",
+  "files": [
+    {
+      "file": "GRSL-02805-2026_Submitted.tex",
+      "source_member": "GRSL_LaTeX/GRSL_paper.tex",
+      "sha256": "b2786acb89c266bc358864e18bb1a48b0a1b55c57fb95feb53fad82e47a6f35b",
+      "size_bytes": 34083
+    },
+    {
+      "file": "GRSL-02805-2026_Submitted.pdf",
+      "source_member": "GRSL_LaTeX/GRSL_paper.pdf",
+      "sha256": "0c48ee46d5b9b49f470df1b5942de7b35a2708b2a87fc8ec70c1971bc291a12d",
+      "size_bytes": 5814834
+    }
+  ]
+}

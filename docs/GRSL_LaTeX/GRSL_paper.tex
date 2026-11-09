@@ -228,18 +228,18 @@ Table~\ref{tab:ucm_scenes} separately evaluates 100 agricultural, 100 buildings,
 \shortstack{\textbf{Noisy}\\PSNR / SSIM} &
 \shortstack{\textbf{Ours-base}\\PSNR / SSIM} \\
 \midrule
-Agricultural & 100 & 17.7573 / 0.4218 & \textbf{29.1523 / 0.7446} \\
-Buildings    & 100 & 16.6583 / 0.4625 & \textbf{27.6827 / 0.7883} \\
-Dense residential & 100 & 17.5475 / 0.4557 & \textbf{30.4376 / 0.7941} \\
+Agricultural & 100 & 17.76 / 0.4218 & \textbf{29.15 / 0.7446} \\
+Buildings    & 100 & 16.66 / 0.4625 & \textbf{27.68 / 0.7883} \\
+Dense residential & 100 & 17.55 / 0.4557 & \textbf{30.44 / 0.7941} \\
 \midrule
-Average      & 300 & 17.3211 / 0.4467 & \textbf{29.0909 / 0.7757} \\
+Average      & 300 & 17.32 / 0.4467 & \textbf{29.09 / 0.7757} \\
 \bottomrule
 \end{tabular*}
 \vspace{1pt}
 \parbox{\columnwidth}{\footnotesize PSNR is in dB. All 300 samples use \(L=4\), and Average summarizes the three scene groups. Ours-base denotes the model before real-SAR adaptation. Bold values mark improvements over the noisy input.}
 \end{table}
 
-Across these categories, Ours-base gains 11.02--12.89~dB in PSNR and 0.3228--0.3384 in SSIM over the input. Mean PSNR increases from 17.3211 to 29.0909~dB, and mean SSIM from 0.4467 to 0.7757. Dense residential scenes attain the highest restored scores.
+Across these categories, Ours-base gains 11.02--12.89~dB in PSNR and 0.3228--0.3384 in SSIM over the input. Mean PSNR increases from 17.32 to 29.09~dB, and mean SSIM from 0.4467 to 0.7757. Dense residential scenes attain the highest restored scores.
 
 \subsection{Ablation Study}
 Table~\ref{tab:ablation} compares representation, compensation, and FDR variants.
@@ -255,17 +255,17 @@ Table~\ref{tab:ablation} compares representation, compensation, and FDR variants
 \toprule
 \textbf{Variant} & \textbf{Active path} & \textbf{PSNR} & \textbf{SSIM} \\
 \midrule
-Intensity-only & Intensity; FDR & 23.6841 & 0.6871 \\
-Log-only & Log, inverse; FDR & 22.2196 & 0.7121 \\
-Full w/o all FDR & Log, inverse, comp. & \underline{26.4634} & \underline{0.7612} \\
-\textbf{Full} & Log, inverse, comp.; FDR & \textbf{28.1425} & \textbf{0.7791} \\
+Intensity-only & Intensity; FDR & 23.68 & 0.6871 \\
+Log-only & Log, inverse; FDR & 22.22 & 0.7121 \\
+Full w/o all FDR & Log, inverse, comp. & \underline{26.46} & \underline{0.7612} \\
+\textbf{Full} & Log, inverse, comp.; FDR & \textbf{28.14} & \textbf{0.7791} \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-With the log transform, inverse, and compensator retained, removing all six FDR blocks reduces macro PSNR from 28.1425 to 26.4634~dB and SSIM from 0.7791 to 0.7612. The losses are 1.6791~dB and 0.0179, respectively.
+With the log transform, inverse, and compensator retained, removing all six FDR blocks reduces macro PSNR from 28.14 to 26.46~dB and SSIM from 0.7791 to 0.7612. The losses are 1.68~dB and 0.0179, respectively.
 
-Full exceeds Log-only by 5.9229~dB and 0.0670 SSIM, supporting compensation with FDR present. These comparisons assess conditional component contributions, not their interaction.
+Full exceeds Log-only by 5.92~dB and 0.0670 SSIM, supporting compensation with FDR present. These comparisons assess conditional component contributions, not their interaction.
 
 Compared with Intensity-only, Log-only lowers PSNR but raises SSIM. Removing modules also reduces capacity, so this ablation does not isolate spectral processing from parameter count.
 
@@ -335,20 +335,20 @@ Table~\ref{tab:real_scenes} gives a separate descriptive evaluation of 60 real p
 \textbf{Model} & \textbf{ENL} & \(\mathbf{M}\)\textbf{-index}$\downarrow$ & \textbf{EPI}$\uparrow$ \\
 \midrule
 \multicolumn{4}{@{}l@{}}{\textit{Homogeneous: 20 patches; Noisy ENL = 32.0025}} \\
-Ours-base & 740.6812 & 4.386215 & 0.312438 \\
-Ours+AMS  & 88.3567  & \textbf{3.742691} & \textbf{0.818562} \\
+Ours-base & 740.6812 & 4.3862 & 0.3124 \\
+Ours+AMS  & 88.3567  & \textbf{3.7427} & \textbf{0.8186} \\
 \midrule
 \multicolumn{4}{@{}l@{}}{\textit{Structural: 20 patches; Noisy ENL = 24.3142}} \\
-Ours-base & 429.6054 & 0.682143 & 0.343582 \\
-Ours+AMS  & 74.2189  & \textbf{0.521876} & \textbf{0.742615} \\
+Ours-base & 429.6054 & 0.6821 & 0.3436 \\
+Ours+AMS  & 74.2189  & \textbf{0.5219} & \textbf{0.7426} \\
 \midrule
 \multicolumn{4}{@{}l@{}}{\textit{Texture: 20 patches; Noisy ENL = 14.9264}} \\
-Ours-base & 620.8473 & 0.152604 & 0.461294 \\
-Ours+AMS  & 55.6948  & \textbf{0.098531} & \textbf{0.835476} \\
+Ours-base & 620.8473 & 0.1526 & 0.4613 \\
+Ours+AMS  & 55.6948  & \textbf{0.0985} & \textbf{0.8355} \\
 \midrule
 \multicolumn{4}{@{}l@{}}{\textit{Average: 60 patches; Noisy ENL = 23.7477}} \\
-Ours-base & 597.0446 & 1.740321 & 0.372438 \\
-Ours+AMS  & 72.7568  & \textbf{1.454366} & \textbf{0.798884} \\
+Ours-base & 597.0446 & 1.7403 & 0.3724 \\
+Ours+AMS  & 72.7568  & \textbf{1.4544} & \textbf{0.7989} \\
 \bottomrule
 \end{tabular*}
 \vspace{1pt}
