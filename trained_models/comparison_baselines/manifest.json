@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "packaged_date": "2026-11-09",
+  "storage": "git-binary-parts",
+  "methods": [
+    {
+      "image": "a_noisy.png",
+      "method": "Noisy",
+      "weights_required": false,
+      "reason": "Original noisy input; no model."
+    },
+    {
+      "image": "b_sar-bm3d.png",
+      "method": "SAR-BM3D",
+      "weights_required": false,
+      "reason": "Non-learning algorithm; no trained weights. Author binaries are not included."
+    },
+    {
+      "image": "c_sar2sar.png",
+      "method": "SAR2SAR",
+      "weights_required": true,
+      "source_repository": "https://gitlab.telecom-paris.fr/ring/sar2sar",
+      "source_commit": "ca3c783333cbe072743f0b8060b5f168b9f0db11",
+      "export_run_record": "output/umbra_buenos_aires_multimethod_1024/runs/sar2sar/summary.json",
+      "export_run_record_sha256": "df2ce309c58413257e6bd87c95f009aa5bb0b3e75cac1ee3b1d94bf07d4ec2f0",
+      "files": [
+        {
+          "path": "sar2sar/SAR2SAR-tensorflow-98550.data-00000-of-00001",
+          "restore_path": "external/SAR2SAR/SAR2SAR-test/checkpoint/SAR2SAR-tensorflow-98550.data-00000-of-00001",
+          "size_bytes": 11863316,
+          "sha256": "aeef94411aff04f63c2b9e5c534b929792a9967901972a9241435312bc7fa8e9",
+          "parts": [
+            {
+              "path": "sar2sar/SAR2SAR-tensorflow-98550.data-00000-of-00001.part001",
+              "size_bytes": 11863316,
+              "sha256": "aeef94411aff04f63c2b9e5c534b929792a9967901972a9241435312bc7fa8e9"
+            }
+          ]
+        },
+        {
+          "path": "sar2sar/SAR2SAR-tensorflow-98550.index",
+          "restore_path": "external/SAR2SAR/SAR2SAR-test/checkpoint/SAR2SAR-tensorflow-98550.index",
+          "size_bytes": 4350,
+          "sha256": "21a7220c846654fa905a9fc12cb4835461e29baf9a998974eaa34a6477232fd8",
+          "parts": [
+            {
+              "path": "sar2sar/SAR2SAR-tensorflow-98550.index.part001",
+              "size_bytes": 4350,
+              "sha256": "21a7220c846654fa905a9fc12cb4835461e29baf9a998974eaa34a6477232fd8"
+            }
+          ]
+        },
+        {
+          "path": "sar2sar/SAR2SAR-tensorflow-98550.meta",
+          "restore_path": "external/SAR2SAR/SAR2SAR-test/checkpoint/SAR2SAR-tensorflow-98550.meta",
+          "size_bytes": 589824,
+          "sha256": "073ba52184c8555497ea7be9f40090f7eec1b33ec0a165d9290ac67a5f048c63",
+          "parts": [
+            {
+              "path": "sar2sar/SAR2SAR-tensorflow-98550.meta.part001",
+              "size_bytes": 589824,
+              "sha256": "073ba52184c8555497ea7be9f40090f7eec1b33ec0a165d9290ac67a5f048c63"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "image": "d_sdudnet.png",
+      "method": "SDUDNet",
+      "weights_required": true,
+      "source_repository": "https://github.com/BFY-official/SDUDNet",
+      "source_commit": "0c799911e84ef79c5fbe6f58f44cb8ee033048a1",
+      "export_run_record": "output/umbra_buenos_aires_multimethod_1024/runs/sdudnet_db_display/run.json",
+      "export_run_record_sha256": "0b6e3bb988051d8ee75bc53cb6f3426d63922eb90e7d67041449c5fad7b35ad8",
+      "files": [
+        {
+          "path": "sdudnet/real.pth",
+          "restore_path": "external/SDUDNet/models/real.pth",
+          "size_bytes": 2345604,
+          "sha256": "3e1b9bc4eaaa01a81544e9b96c5e238415f7fd8af089881f3ae19e3469b7e69d",
+          "parts": [
+            {
+              "path": "sdudnet/real.pth.part001",
+              "size_bytes": 2345604,
+              "sha256": "3e1b9bc4eaaa01a81544e9b96c5e238415f7fd8af089881f3ae19e3469b7e69d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "image": "e_trans-sar.png",
+      "method": "Trans-SAR",
+      "weights_required": true,
+      "source_repository": "https://github.com/malshaV/sar_transformer",
+      "source_commit": "b3ac845f96f2332aa4f1af94b455f71630978b17",
+      "export_run_record": "output/umbra_buenos_aires_multimethod_1024/runs/transsar/run.json",
+      "export_run_record_sha256": "a4a63063bd2245dd6d4ae2af57397ad43318c1e1d68222851883564e4ee2ebc1",
+      "files": [
+        {
+          "path": "trans-sar/model.pth",
+          "restore_path": "pretrained_models/model.pth",
+          "size_bytes": 96556361,
+          "sha256": "cdab8293c7b6ea72ccd192c119b1368b6d661b739d52cc43611cc75755263a70",
+          "parts": [
+            {
+              "path": "trans-sar/model.pth.part001",
+              "size_bytes": 33554432,
+              "sha256": "18b42180ae9f7bd8fdf6ce08d7fab806cb29767c1d02ee268a4fc23e37c06739"
+            },
+            {
+              "path": "trans-sar/model.pth.part002",
+              "size_bytes": 33554432,
+              "sha256": "55a1efb3a814922606d0a40fe61389df4651362d1977e1d7c1bc694a72f843db"
+            },
+            {
+              "path": "trans-sar/model.pth.part003",
+              "size_bytes": 29447497,
+              "sha256": "0920b6ae495bbc66b9c35a52c41d10a8b16216125deb9bebab689195999d72cb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "image": "f_cl-sar.png",
+      "method": "CL-SAR",
+      "weights_required": true,
+      "source_repository": "https://github.com/YangtianFang2002/CL-SAR-Despeckling",
+      "source_commit": "b12129d1d3448750b9098b239397587eeb359857",
+      "export_run_record": "output/cl_sar_umbra_buenos_aires/figure3_clsar_final/run.json",
+      "export_run_record_sha256": "3c475851cd4ab100fc0a8f00e37b3661cd11c56c1e7f39f2cf3f4356480e348b",
+      "files": [
+        {
+          "path": "cl-sar/net_g_latest.pth",
+          "restore_path": "external/CL-SAR/experiments/MDN1-default/models/net_g_latest.pth",
+          "size_bytes": 40347040,
+          "sha256": "94765b1e6dfb7584842dbad4b3683a566f77c5b3d85595dbb8913f90fef8c80b",
+          "parts": [
+            {
+              "path": "cl-sar/net_g_latest.pth.part001",
+              "size_bytes": 33554432,
+              "sha256": "0987df527db7c92bb837fe4750afc76238d85df1f10781b317dcdf62b9384ef6"
+            },
+            {
+              "path": "cl-sar/net_g_latest.pth.part002",
+              "size_bytes": 6792608,
+              "sha256": "a4f0064c2db52d78d6b7f219511d95635c993ce4468ba78ec3c776e25a136e1c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "image": "g_merlin.png",
+      "method": "MERLIN",
+      "weights_required": true,
+      "source_repository": "https://github.com/hi-paris/deepdespeckling",
+      "source_commit": "b9bf54a013933a8dbfa63d5e02cd5b0a7acd7efc",
+      "export_run_record": "output/umbra_buenos_aires_multimethod_1024/runs/merlin_stride64_weighted/run.json",
+      "export_run_record_sha256": "cd75642a744076cef052e1d5c3156f72e1b408babc806517d3b4d9dc80f3640b",
+      "files": [
+        {
+          "path": "merlin/spotlight.pth",
+          "restore_path": "external/deepdespeckling/deepdespeckling/merlin/saved_models/spotlight.pth",
+          "size_bytes": 3965241,
+          "sha256": "25a978b0d53b5b5307ca2ba57b6368a86493c4eeff24efe6ba58987b2e154a56",
+          "parts": [
+            {
+              "path": "merlin/spotlight.pth.part001",
+              "size_bytes": 3965241,
+              "sha256": "25a978b0d53b5b5307ca2ba57b6368a86493c4eeff24efe6ba58987b2e154a56"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "image": "h_mulog-drunet.png",
+      "method": "MuLoG-DRUNet",
+      "weights_required": true,
+      "source_repository": "https://gitlab.telecom-paris.fr/ring/mulog-drunet",
+      "source_commit": "f468573f5bd4d7d30065380b8580269bcefbec19",
+      "export_run_record": "output/umbra_buenos_aires_multimethod_1024/runs/mulog_drunet/run.json",
+      "export_run_record_sha256": "f5817915111ea50f4bebff02b221dbb65d79e873ed12fd0b0879b0b3b6516936",
+      "files": [
+        {
+          "path": "mulog-drunet/generic_model.pth",
+          "restore_path": "external/MuLoG-DRUNet/models/generic_model.pth",
+          "size_bytes": 130581503,
+          "sha256": "20bc285c8710214003f72bdf5e48004c1accb63547d4a304c89714c385dff124",
+          "parts": [
+            {
+              "path": "mulog-drunet/generic_model.pth.part001",
+              "size_bytes": 33554432,
+              "sha256": "c288b7b2c68ed87f6739bfd87956955182517260677e06b759d83ac837e8e53e"
+            },
+            {
+              "path": "mulog-drunet/generic_model.pth.part002",
+              "size_bytes": 33554432,
+              "sha256": "9b37d93eb324bfdd0810bf469055217131f03bb7a6158045d0e02d8e68fa653f"
+            },
+            {
+              "path": "mulog-drunet/generic_model.pth.part003",
+              "size_bytes": 33554432,
+              "sha256": "01ef1ff60c7a13cf3fdccc25eff1adf7d94066bb86cf5e6dcfc06ebf17a9959c"
+            },
+            {
+              "path": "mulog-drunet/generic_model.pth.part004",
+              "size_bytes": 29918207,
+              "sha256": "d36fa81f538aa31db1461b86ee18fc4974fb542976380b0da504096d6582cf41"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "part_size_bytes": 33554432
+}

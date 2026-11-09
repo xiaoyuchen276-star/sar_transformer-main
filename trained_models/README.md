@@ -2,6 +2,8 @@
 
 本目录集中保存项目中具有代表性的已训练权重。整理日期：2026-09-07。
 
+2026-11-09 补充：[导出对比图对应的六套基线权重](comparison_baselines/README.md)，以普通 Git 分片保存，包含 SAR2SAR、SDUDNet、Trans-SAR、CL-SAR、MERLIN 和 MuLoG-DRUNet；独立清单见该子目录的 `manifest.json`。
+
 ## 收录范围
 
 - 6 种网络结构的历史完整监督训练最佳权重。

@@ -37,6 +37,11 @@ venv/
 *.pth
 *.pt
 *.ckpt
+# Reconstructed baseline checkpoints; the verified .partNNN files are tracked.
+/trained_models/comparison_baselines/sar2sar/*.data-*
+/trained_models/comparison_baselines/sar2sar/*.index
+/trained_models/comparison_baselines/sar2sar/*.meta
+!/trained_models/comparison_baselines/sar2sar/*.part*
 /pretrained_models/
 /experiments/
 /experiments_repro/
