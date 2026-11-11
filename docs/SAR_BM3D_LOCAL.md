@@ -1,6 +1,10 @@
-# SAR-BM3D 本地复现（Windows / MATLAB）
+# SAR-BM3D 历史复现说明
 
-本地使用 GRIP-UNINA 原作者发布的 **SAR-BM3D v1.0 Windows x64** 软件包，调用原始 `SARBM3D_v10` 和随包 MEX。算法参数和作者文件保持原样。无需训练、GPU、PyTorch 或 Python 环境。
+2026-11-12：已按要求移除本机 SAR-BM3D 官方包、下载归档、专用 MATLAB Docker 容器及镜像，以及本次新增的 Docker 配置和运行产物。以下保留仓库原有 Windows 复现记录，不代表当前 Mac 已安装或可运行。
+
+## 历史 Windows 复现说明
+
+历史 Windows 流程使用 GRIP-UNINA 原作者发布的 **SAR-BM3D v1.0 Windows x64** 软件包，调用原始 `SARBM3D_v10` 和随包 MEX。算法参数和作者文件保持原样。无需训练、GPU、PyTorch 或 Python 环境。
 
 ## 来源与版本
 
@@ -11,7 +15,7 @@
 
 该软件公开下载，但核心为编译好的 MEX，并非完整开放源代码。随包 `LICENSE.txt` 限非营利用途，禁止分发软件，公开使用结果时应引用原作者。官方压缩包和解压目录仅保存在被 Git 忽略的 `external/sarbm3d/`，本项目只添加独立调用脚本。
 
-## 已准备的本地环境
+## 历史 Windows 环境（2026-09-08）
 
 - MATLAB R2024a，64 位 Windows。
 - MATLAB 程序：`D:\Program Files\MATLAB\R2024a\bin\matlab.exe`。
@@ -20,7 +24,7 @@
 - VC++ 2010 x64 运行库已在本机找到；最终兼容性以实际 MEX 运行结果为准。
 - `external/sarbm3d/provenance.json` 保存下载地址、压缩包哈希和每个作者文件的哈希。
 
-## 本次实际验证（2026-09-08）
+## 历史运行验证（2026-09-08）
 
 | 样例 | 设置 | 含噪 → 去斑 PSNR | 算法耗时 |
 | --- | --- | --- | --- |
@@ -28,7 +32,7 @@
 | 固定种子合成图 | 128×128，L=4，强度域，范围 1 | 14.74 → 26.62 dB | 2.77 秒 |
 | 本地真实 SAR MAT | 256×256，调用参数 L=1 | 无干净参考，不计算 | 11.61 秒 |
 
-这些是本次本机运行值，时间仅包含算法推理，不含 MATLAB 启动。两行 PSNR 使用不同数值域，不宜相互比较。
+这些是上述历史 Windows 运行值，时间仅包含算法推理，不含 MATLAB 启动。两行 PSNR 使用不同数值域，不宜相互比较。
 
 - 官方样例结果：`output/sarbm3d_local/official_napoli_L1/`，另有带标签的幅度对比图 `comparison_labeled.png`。
 - 合成样例结果：`output/sarbm3d_local/synthetic_L4/`。

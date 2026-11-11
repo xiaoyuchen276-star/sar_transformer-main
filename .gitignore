@@ -113,6 +113,7 @@ venv/
 /output/umbra_showcase_*.png
 /output/umbra_source_7_visual_audit/
 /output/umbra_source_7_visual_audit.pdf
+/output/fig3_iceye_paris_20261109/
 /output/去噪效果展示_*.docx
 
 # Duplicate GRSL submission render copies retained locally
