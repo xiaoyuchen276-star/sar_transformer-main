@@ -1,0 +1,8 @@
+{
+  "url": "https://iceye-open-data-catalog.s3.us-west-2.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.tif",
+  "file": "/Users/tim/Research/sar_transformer-main/output/fig3_iceye_paris_20261109/raw/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.tif",
+  "size_bytes": 512206765,
+  "etag": "\"da8075f39d6957d849cde33bcd815229-62\"",
+  "sha256": "d2543836880133997c788de4765f7ea48772fa218c7af5345207d86ef91fcacc",
+  "download_seconds": 147.906000707997
+}

@@ -1,0 +1,67 @@
+{
+  "source": "/Users/tim/Research/sar_transformer-main/output/fig3_iceye_paris_20261109/raw/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.tif",
+  "width": 20000,
+  "height": 20000,
+  "dtype": "uint16",
+  "crs": "None",
+  "transform": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "gcp_count": 100,
+  "gcp_crs": "EPSG:4326",
+  "rpc_present": true,
+  "calibration_factor": 1.412387683883416e-05,
+  "intensity_formula": "sigma0 = calibration_factor * float(DN)^2",
+  "display": {
+    "domain": "10*log10(sigma0)",
+    "limits_db": [
+      -18.0,
+      0.0
+    ],
+    "purpose": "display only; original and crop DN are unchanged"
+  },
+  "candidates": {
+    "A": {
+      "col_start": 1792,
+      "row_start": 2304,
+      "width": 4096,
+      "height": 4096,
+      "coordinate_convention": "zero-based, half-open",
+      "nominal_extent_m": [
+        1024.0,
+        1024.0
+      ],
+      "dn_range": [
+        8,
+        9921
+      ],
+      "zero_fraction": 0.0,
+      "uint16_max_fraction": 0.0
+    },
+    "B": {
+      "col_start": 3328,
+      "row_start": 512,
+      "width": 4096,
+      "height": 4096,
+      "coordinate_convention": "zero-based, half-open",
+      "nominal_extent_m": [
+        1024.0,
+        1024.0
+      ],
+      "dn_range": [
+        5,
+        15094
+      ],
+      "zero_fraction": 0.0,
+      "uint16_max_fraction": 0.0
+    }
+  }
+}

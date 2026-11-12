@@ -1,0 +1,280 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://sar.iceye.com/schema/product-spec/v0.2.2/schema.json"
+  ],
+  "id": "ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          2.3894774629148285,
+          48.96387995545854
+        ],
+        [
+          2.43059637389642,
+          48.92799447214395
+        ],
+        [
+          2.485097764359523,
+          48.9550555942943
+        ],
+        [
+          2.443995864563276,
+          48.99096033764215
+        ],
+        [
+          2.3894774629148285,
+          48.96387995545854
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    2.3894774629148285,
+    48.92799447214395,
+    2.485097764359523,
+    48.99096033764215
+  ],
+  "properties": {
+    "datetime": "2025-10-28T00:05:26.962Z",
+    "created": "2025-12-18T09:33:03Z",
+    "start_datetime": "2025-10-28T00:05:19.793Z",
+    "end_datetime": "2025-10-28T00:05:34.132Z",
+    "platform": "ICEYE-X56",
+    "constellation": "ICEYE",
+    "sar:instrument_mode": "spotlight",
+    "sar:frequency_band": "X",
+    "sar:center_frequency": 9.6,
+    "sar:polarizations": [
+      "VV"
+    ],
+    "sar:observation_direction": "left",
+    "sat:orbit_state": "ascending",
+    "view:off_nadir": 27.443785,
+    "view:incidence_angle": 30.252444,
+    "processing:software": {
+      "forge": "v1.0.1",
+      "processor": "ICEYE_I_1.1.4"
+    },
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      20000,
+      20000
+    ],
+    "proj:centroid": {
+      "lat": 48.959470445453526,
+      "lon": 2.437268778200832
+    },
+    "raster:bands": [
+      {
+        "data_type": "ui16",
+        "bits_per_sample": 16
+      }
+    ]
+  },
+  "links": [
+    {
+      "rel": "collection",
+      "href": "../../../collections/iceye-sar.json",
+      "type": "application/json",
+      "title": "ICEYE Open SAR Data Collection"
+    },
+    {
+      "rel": "root",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/catalog.json",
+      "type": "application/json",
+      "title": "ICEYE SAR Open Data"
+    },
+    {
+      "rel": "parent",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/collections/iceye-sar.json",
+      "type": "application/json",
+      "title": "ICEYE Open SAR Data Collection"
+    },
+    {
+      "rel": "thumbnail",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_CSI.png",
+      "type": "image/png",
+      "title": "CSI PNG"
+    },
+    {
+      "rel": "thumbnail",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_VID.gif",
+      "type": "image/gif",
+      "title": "VID GIF"
+    },
+    {
+      "rel": "thumbnail",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_THM.png",
+      "type": "image/png",
+      "title": "Thumbnail"
+    },
+    {
+      "rel": "self",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/stac-items/2025/10/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF.json",
+      "type": "application/geo+json",
+      "title": "ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://geojson.io/#data=data:text/x-url,https://iceye-open-data-catalog.s3.amazonaws.com/stac-items/2025/10/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF.json",
+      "type": "text/html",
+      "title": "View footprint in geojson.io"
+    }
+  ],
+  "assets": {
+    "csi-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_CSI.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "CSI metadata"
+    },
+    "csi-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_CSI.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "CSI product"
+    },
+    "grd-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "GRD metadata"
+    },
+    "grd-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "GRD product"
+    },
+    "qlk-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_QLK.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "Quicklook Metadata"
+    },
+    "qlk-kml": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_QLK.kml",
+      "type": "application/vnd.google-earth.kml+xml",
+      "roles": [
+        "overview"
+      ],
+      "title": "Quicklook KML"
+    },
+    "qlk-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_QLK.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Quicklook COG"
+    },
+    "slc-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_SLC.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "SLC metadata"
+    },
+    "slc-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_SLC.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "SLC product"
+    },
+    "vid-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_VID.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "VID metadata"
+    },
+    "vid-mp4": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_VID.mp4",
+      "type": "video/mp4",
+      "roles": [
+        "overview"
+      ],
+      "title": "VID MP4"
+    },
+    "vid-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_VID.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "VID product"
+    },
+    "cphd": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_X56_CPHD_SLF_6785560_20251028T000519.cphd",
+      "type": "application/octet-stream",
+      "roles": [
+        "data"
+      ],
+      "title": "Compensated Phase History Data (CPHD)"
+    },
+    "sicd": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_X56_SICD_SLF_6785560_20251028T000519.nitf",
+      "type": "application/x-nitf",
+      "roles": [
+        "data"
+      ],
+      "title": "Sensor Independent Complex Data (SICD)"
+    },
+    "sicd-xml": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_X56_SICD_SLF_6785560_20251028T000519.xml",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "title": "SICD Metadata"
+    },
+    "sidd": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_X56_SIDD_GRD_SLF_6785560_20251028T000519.nitf",
+      "type": "application/x-nitf",
+      "roles": [
+        "data"
+      ],
+      "title": "Sensor Independent Derived Data (SIDD)"
+    },
+    "sidd-xml": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_X56_SIDD_GRD_SLF_6785560_20251028T000519.xml",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "title": "SIDD Metadata"
+    },
+    "graphic": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_THM.png",
+      "type": "image/png",
+      "roles": [
+        "graphic"
+      ],
+      "title": "Thumbnail"
+    }
+  }
+}

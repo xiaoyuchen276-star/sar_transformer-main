@@ -113,7 +113,12 @@ venv/
 /output/umbra_showcase_*.png
 /output/umbra_source_7_visual_audit/
 /output/umbra_source_7_visual_audit.pdf
-/output/fig3_iceye_paris_20261109/
+# ICEYE Fig. 3 previews, final crops, and provenance are versioned.
+# Keep the downloadable full acquisition and temporary arrays local.
+/output/fig3_iceye_paris_20261109/raw/*.tif
+/output/fig3_iceye_paris_20261109/raw/*.part
+/output/fig3_iceye_paris_20261109/raw/download_ranges.json
+/output/fig3_iceye_paris_20261109/crops/*.npy
 /output/去噪效果展示_*.docx
 
 # Duplicate GRSL submission render copies retained locally

@@ -1,0 +1,129 @@
+{
+  "scene": "ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF",
+  "source_file": "/Users/tim/Research/sar_transformer-main/output/fig3_iceye_paris_20261109/raw/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.tif",
+  "source_download": {
+    "url": "https://iceye-open-data-catalog.s3.us-west-2.amazonaws.com/data/spot-fine/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.tif",
+    "file": "/Users/tim/Research/sar_transformer-main/output/fig3_iceye_paris_20261109/raw/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.tif",
+    "size_bytes": 512206765,
+    "etag": "\"da8075f39d6957d849cde33bcd815229-62\"",
+    "sha256": "d2543836880133997c788de4765f7ea48772fa218c7af5345207d86ef91fcacc",
+    "download_seconds": 147.906000707997
+  },
+  "parent_metadata": "/Users/tim/Research/sar_transformer-main/output/fig3_iceye_paris_20261109/raw/ICEYE_U09WX2_20251028T000519Z_6785560_X56_SLF_GRD.json",
+  "coordinate_convention": "zero-based; half-open [start,start+size)",
+  "crop": {
+    "col_start": 3328,
+    "row_start": 512,
+    "width": 3072,
+    "height": 3072,
+    "nominal_extent_m": [
+      768.0,
+      768.0
+    ]
+  },
+  "pixel_spacing_m": [
+    0.25,
+    0.25
+  ],
+  "resolution_m": [
+    0.495875,
+    0.5
+  ],
+  "selection_reason": "Compact continuous view with residential texture, regular roofs/roads, and field interiors",
+  "radiometry": {
+    "input": "uint16 scaled amplitude",
+    "sigma0_formula": "calibration_factor * float64(DN)^2",
+    "calibration_factor": 1.412387683883416e-05,
+    "output_dtype": "float32",
+    "amplitude_mapping_tag_present": false
+  },
+  "display": {
+    "transform": "10*log10(sigma0)",
+    "limits_db": [
+      -18.0,
+      0.0
+    ],
+    "normalization_scope": "shared fixed window for all current previews",
+    "native_crop_png_size": [
+      3072,
+      3072
+    ],
+    "annotated_preview_size": [
+      1536,
+      1536
+    ],
+    "annotation_preview_resampling": "nearest",
+    "note": "Display clipping does not alter scientific TIFF values"
+  },
+  "spatial_processing": "No resampling, rotation, reprojection, or despeckling of scientific crops",
+  "georeferencing": "All parent GCP pixel coordinates shifted by crop origin; RPC line/samp offsets shifted; parent metadata stored separately",
+  "rois": {
+    "H": {
+      "col_start": 2624,
+      "row_start": 1696,
+      "width": 384,
+      "height": 384,
+      "description": "Relatively homogeneous field interior",
+      "parent_col_start": 5952,
+      "parent_row_start": 2208,
+      "sigma0_mean": 0.0922163799858298,
+      "sigma0_enl_diagnostic": 4.367313742898537,
+      "subblock_mean_cv_4x4": 0.024438635326260717,
+      "subblock_mean_min_max_relative_to_roi_mean": [
+        0.9541075711638515,
+        1.0380361561776161
+      ]
+    },
+    "S": {
+      "col_start": 1200,
+      "row_start": 1424,
+      "width": 384,
+      "height": 384,
+      "description": "Roof edges and corners",
+      "parent_col_start": 4528,
+      "parent_row_start": 1936,
+      "sigma0_mean": 0.4388224570551892,
+      "sigma0_enl_diagnostic": 0.0007943831871990746,
+      "subblock_mean_cv_4x4": 1.8133040405065852,
+      "subblock_mean_min_max_relative_to_roi_mean": [
+        0.11118630546025234,
+        7.390563809022689
+      ]
+    },
+    "T": {
+      "col_start": 320,
+      "row_start": 256,
+      "width": 384,
+      "height": 384,
+      "description": "Dense residential scattering texture",
+      "parent_col_start": 3648,
+      "parent_row_start": 768,
+      "sigma0_mean": 0.2031427115673594,
+      "sigma0_enl_diagnostic": 0.022942576822562365,
+      "subblock_mean_cv_4x4": 1.0059411537403915,
+      "subblock_mean_min_max_relative_to_roi_mean": [
+        0.2831165458417306,
+        4.245675022100473
+      ]
+    }
+  },
+  "products": {
+    "fig3_view_amplitude.tif": {
+      "size_bytes": 9805603,
+      "sha256": "9e9623acd1d08c89e002ef54ad5ec0402eb9b3bc84c7a585f62d05d6f2d9b923",
+      "domain": "Original uint16 amplitude DN; unchanged pixel values"
+    },
+    "fig3_view_sigma0.tif": {
+      "size_bytes": 11404392,
+      "sha256": "3ab5c55bc1ae2fd8cfeb5c622da34b0ea4f4836d60e31ceb9b3ab034dd381088",
+      "domain": "Calibrated linear sigma0 intensity; float32"
+    }
+  },
+  "validation": {
+    "amplitude_crop_pixel_exact": true,
+    "intensity_file_roundtrip_exact": true,
+    "adjusted_gcp_rpc_checked": true
+  },
+  "attribution": "ICEYE Open Data, CC BY 4.0",
+  "radiometric_reference": "https://sar.iceye.com/6.0.6/foundations/radiometric/#calibration-correction"
+}
