@@ -1,0 +1,10 @@
+RGPI author-program comparison
+
+Paper-confirmed geometry: opposite 3x3 block centers at (+/-2,0), (0,+/-2), (+/-2,+/-2); full 7x7 support. Figure 1 is saved.
+Paper equation (18) defines input-derived heterogeneity weight and text says weights in [0,1]. The paper does not explicitly specify variance ddof, border padding, or denominator adjustment after omitted zero-containing direction pairs.
+The project equation implementation documents ddof=1, negative weights clipped to 0, valid 3-pixel border, and valid direction-pair denominator. These are implementation conventions, not verified internals of the author .p program.
+
+The protected author implementation executes successfully in MATLAB R2024a but differs numerically from the equation implementation. See probe_comparison.json and real_probe_comparison.json. The protected functions do not expose source code, and the cause of the numeric discrepancy remains unresolved. The output should be described as a paper-equation implementation, not a reproduced author-program value.
+
+Source: https://doi.org/10.3390/rs14040856
+Author package: https://github.com/ZX-HUB561/SAR_RGPI

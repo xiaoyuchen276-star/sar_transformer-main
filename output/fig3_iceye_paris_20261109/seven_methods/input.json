@@ -1,0 +1,20 @@
+{
+  "source": {
+    "path": "D:\\research\\sar_transformer-main\\output\\fig3_iceye_paris_20261109\\crops\\fig3_view_sigma0.tif",
+    "sha256": "3ab5c55bc1ae2fd8cfeb5c622da34b0ea4f4836d60e31ceb9b3ab034dd381088"
+  },
+  "roi": {
+    "height": 3072,
+    "width": 3072,
+    "row_start": 512,
+    "col_start": 3328
+  },
+  "domain": "calibrated GRD sigma0",
+  "display": {
+    "shared_db_limits": [
+      -18,
+      0
+    ]
+  },
+  "looks": 5
+}

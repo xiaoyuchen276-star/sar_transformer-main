@@ -1,0 +1,43 @@
+{
+  "method": "sarbm3d",
+  "complete": true,
+  "source": {
+    "implementation": "GRIP-UNINA SAR-BM3D v1.0 (Windows x64)",
+    "release_date": "2013-07-31",
+    "source_url": "https://www.grip.unina.it/download/prog/SAR-BM3D/version_1.0/SARBM3D_v10_win64.zip",
+    "readme_url": "https://www.grip.unina.it/download/prog/SAR-BM3D/version_1.0/README.txt",
+    "paper_doi": "10.1109/TGRS.2011.2161586",
+    "archive_sha256": "6bad387f5b085cb01a0559064812de6e667bd0b0cc784b4611f03520594e7da6",
+    "verified_at": "2026-09-08T21:20:20.3174779+08:00",
+    "package_root": "D:\\research\\sar_transformer-main\\external\\sarbm3d\\SARBM3D_v10_win64",
+    "files_sha256": {
+      "psnr.m": "664a3767c2ed43b1db6af5c2b622491646e2c0eef5db07ef0f310103bea54c54",
+      "SARBM3D_step2.m": "1cedde019a530bb3a28fcd0b9666034682916434eae4c4615d2526f1af794410",
+      "SARBM3D_demo.m": "45a7c3c3ae2157217407e8d46b34686ad0a0d72227bc1b5083b5c35ed6482b5f",
+      "removezeros.m": "b5d157b8d4a04a967e471d9e5e02dc93ff5a4eb76d08ceeecf4bd8688ba3f172",
+      "cvaux210.dll": "a427fa30bdca63ff3d885c2ac4feb04ff1d590ee0da006c5db76c7ea7d50bdc7",
+      "README.txt": "58d86ef11e831a78bfac7c914c4c4729554cab13812b95c8bd705d24479a24f8",
+      "ml210.dll": "aeede0d80fc43efa549a967ddab465d0200958ec5abe534786aa9844733c4b0c",
+      "napoli_noisy.raw": "d7108d0e32b1525b8cb70bbf73e09c5a0aac5f064caeed9584604d4999898ddf",
+      "napoli.raw": "b9fa5cd1927d497b60bc1d1c04c05942d2dabb9430dfd88d2467ecf640981f73",
+      "SARBM3D_v10.m": "069f418c6d456b471a154e9416724ebf16bf0260ef3059038666d8d720f06da3",
+      "cv210.dll": "1aad9128206ce2a34c699b3b8b14bfa05db686ed562e4e1709ef7127f91dcfc3",
+      "SARBM3D_step1.mexw64": "4c82396f527240513775b5bbbdd24ce7a0ecd152212d497a385da72d77536d96",
+      "removezeros.mexw64": "41675fc7c347a57c6c0b4fc7e37439fbc22987a28d65e2ebdf93d4957b5c0d46",
+      "SARBM3D_step2.mexw64": "35cb27ee466b0f9c4c36571bd7800708f7238a2799a8af3286780f92c32fc318",
+      "SARBM3D_step1.m": "ca6ad4a6d2d2348a5eb81f26ccf5016c271f3208f110809cc62eede22d6c8437",
+      "LICENSE.txt": "a3f78c26cee9c99d5cd6ac6e6d1fbc7451eb31f93dbdf2d603043308ef2c9f68",
+      "license_opencv.txt": "1b4bc76b42fc026e0da9f01cf391eb32434296b9c89d1089e08367e0b2328b5e",
+      "cxcore210.dll": "bb4459e38c3f944e9df490b8b190dac450a4f3f205035d21a179bec33ffc76dc"
+    }
+  },
+  "input_domain": "square root of calibrated GRD intensity",
+  "output_domain": "calibrated GRD intensity",
+  "looks": 5.0,
+  "core": 512,
+  "halo": 64,
+  "seconds": 816.1701083,
+  "output_sha256": "8abbb9d5fbb8a7432029aff655268f9b24e07aa1b25f37fa0f26bdf33bd73f1e",
+  "mat_sha256": "56a3bc59e993b7d3f17101562056b17e8804708978a52b2c4247634feb771862",
+  "script_sha256": "a2d0239f858b927e941210e904d758717198d6a733d5a9ee680bfab441243223"
+}

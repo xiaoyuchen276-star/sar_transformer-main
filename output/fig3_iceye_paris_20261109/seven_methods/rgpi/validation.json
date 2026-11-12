@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-13",
+  "result_version": "Ma2022_equations_15_17_18_explicit_implementation",
+  "unit_test_command": "python -m unittest discover -s scripts/iceye_paris -p test_rgpi_metric.py -v",
+  "unit_tests_passed": 6,
+  "independent_density_oracle": "scipy.stats.betaprime.logpdf with explicit pixel loops and patch slices",
+  "oracle_absolute_tolerance": 1e-12,
+  "tested_properties": [
+    "local sample/population variance and direct formula agreement",
+    "ROI uses full-image neighborhood context",
+    "invariance to positive output gains including 1e-120 and 1e120",
+    "identity output maximizes conditional likelihood on fixed input",
+    "constant noisy input has zero heterogeneity weight",
+    "zero output excludes the affected pixel-direction pairs"
+  ],
+  "official_matlab_check": {
+    "numerically_matched": false,
+    "reference_input": "author_reference/probe.mat",
+    "official_filtered": 0.12771012478206956,
+    "formula_filtered": 0.012599276138404229,
+    "official_identity": 0.13568186272967112,
+    "formula_identity": 0.015397206966403443,
+    "both_gain_invariant": true,
+    "interpretation": "The author-provided protected .p routine has not been numerically reproduced. Primary CSV results use the documented paper-equation implementation, not that routine.",
+    "additional_records": [
+      "author_reference/AUDIT.txt",
+      "author_reference/probe_comparison.json",
+      "author_reference/real_probe_comparison.json"
+    ]
+  }
+}

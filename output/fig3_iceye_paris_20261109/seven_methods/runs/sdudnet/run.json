@@ -1,0 +1,42 @@
+{
+  "source": {
+    "repository": "https://github.com/BFY-official/SDUDNet",
+    "commit": "0c799911e84ef79c5fbe6f58f44cb8ee033048a1",
+    "tracked_sources_unchanged": true,
+    "dnn_sha256": "5fa45cf0fce5783091c8fa1264f01b8cd90632c973462d38307de300429d0af5",
+    "variant": "real",
+    "checkpoint": "D:\\research\\sar_transformer-main\\external\\SDUDNet\\models\\real.pth",
+    "checkpoint_sha256": "3e1b9bc4eaaa01a81544e9b96c5e238415f7fd8af089881f3ae19e3469b7e69d",
+    "official_pretrained": true,
+    "strict_state_dict_loaded": true,
+    "registered_parameters": 579552,
+    "forward_output": "first output: out (second is input - out)",
+    "eval_mode": true
+  },
+  "tiling": {
+    "core": 512,
+    "halo": 128
+  },
+  "input_domain": "8-bit dB display, same adapter as the supplied eight-panel export",
+  "input_hash": "0ad2161c1e14996756b621cb850a33a460b5709838b9ec0f2a64d43ad3c17c0c",
+  "display_limits_db": [
+    -18,
+    0
+  ],
+  "output_inverse": "10**((-18+18*clip(prediction,0,1))/10)",
+  "input_display_clipped_fraction": 0.0281272464328342,
+  "output_display_clipped_fraction": 0.0024881362915039062,
+  "method": "sdudnet",
+  "complete": true,
+  "total_seconds": 10.703108900001098,
+  "shape": [
+    3072,
+    3072
+  ],
+  "minimum": 0.015848931924611134,
+  "maximum": 1.0,
+  "mean": 0.08189064409892878,
+  "zero_fraction": 0.0,
+  "output_sha256": "7cab7f940cfc2a9ab809121d029150bd59fdd3523a243fceb64c69c291cd5823",
+  "script_sha256": "7c16dde287cfffcdb9a18221fe693fc235a46504b9964c667c52fb6aa233b13e"
+}

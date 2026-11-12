@@ -1,0 +1,374 @@
+{
+  "audit_date": "2026-11-13",
+  "scope": "GRSL_paper.pdf Figure 3 provenance; manuscript files unchanged",
+  "pdf": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\GRSL_paper.pdf",
+  "pdf_sha256": "0c48ee46d5b9b49f470df1b5942de7b35a2708b2a87fc8ec70c1971bc291a12d",
+  "pdf_page": 4,
+  "figure_size_each": [
+    1024,
+    1024
+  ],
+  "all_eight_assets_byte_identical_to_identified_source_exports": true,
+  "all_eight_pdf_embedded_images_pixel_identical_to_assets": true,
+  "panels": [
+    {
+      "panel": "a",
+      "paper_label": "Noisy",
+      "actual_method": "Noisy",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\a_noisy.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\a_noisy.png",
+      "asset_sha256": "225086af8d526ef4212832336553d8db93d8cecdaf8f9342e118cd8ea6124321",
+      "source_sha256": "225086af8d526ef4212832336553d8db93d8cecdaf8f9342e118cd8ea6124321",
+      "recorded_source_sha256": "225086af8d526ef4212832336553d8db93d8cecdaf8f9342e118cd8ea6124321",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "737d5dc1ac585c27eeb75791252c928df08f7ccb45b28f48090d82a59483f02e",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im9.png",
+          "pixel_sha256_rgb": "737d5dc1ac585c27eeb75791252c928df08f7ccb45b28f48090d82a59483f02e"
+        }
+      ]
+    },
+    {
+      "panel": "b",
+      "paper_label": "SAR-BM3D",
+      "actual_method": "SAR-BM3D",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\b_sar-bm3d.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\b_sar-bm3d.png",
+      "asset_sha256": "cd3926597b70361c682627a9af421a9887ff00dbdbf756c41c57eed4660d1a9e",
+      "source_sha256": "cd3926597b70361c682627a9af421a9887ff00dbdbf756c41c57eed4660d1a9e",
+      "recorded_source_sha256": "cd3926597b70361c682627a9af421a9887ff00dbdbf756c41c57eed4660d1a9e",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "def912d13071c39dd6567b6f649561356c3a39ff06b662205177dbc806f24460",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im10.png",
+          "pixel_sha256_rgb": "def912d13071c39dd6567b6f649561356c3a39ff06b662205177dbc806f24460"
+        }
+      ]
+    },
+    {
+      "panel": "c",
+      "paper_label": "SAR2SAR",
+      "actual_method": "SAR2SAR",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\c_sar2sar.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\c_sar2sar.png",
+      "asset_sha256": "db91873397b0a376158a44f85ea1c3c18dd2827fc5e57c155822c60e93a73b6c",
+      "source_sha256": "db91873397b0a376158a44f85ea1c3c18dd2827fc5e57c155822c60e93a73b6c",
+      "recorded_source_sha256": "db91873397b0a376158a44f85ea1c3c18dd2827fc5e57c155822c60e93a73b6c",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "dc95d6964496f6a09a131dc67bbdaaf0dbe8bd6787922bfe4a97e907a38883c1",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im11.png",
+          "pixel_sha256_rgb": "dc95d6964496f6a09a131dc67bbdaaf0dbe8bd6787922bfe4a97e907a38883c1"
+        }
+      ]
+    },
+    {
+      "panel": "d",
+      "paper_label": "SDUDNet",
+      "actual_method": "SDUDNet",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\d_sdudnet.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\d_sdudnet.png",
+      "asset_sha256": "33227df125c43a3db52259a55ab0c11e903cc1f031d8ed4defd427b55721eba0",
+      "source_sha256": "33227df125c43a3db52259a55ab0c11e903cc1f031d8ed4defd427b55721eba0",
+      "recorded_source_sha256": "33227df125c43a3db52259a55ab0c11e903cc1f031d8ed4defd427b55721eba0",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "ec7fc4a9e35bf893df7121adfac17a64b4abe716ef75d4d4c4fff70618424e98",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im12.png",
+          "pixel_sha256_rgb": "ec7fc4a9e35bf893df7121adfac17a64b4abe716ef75d4d4c4fff70618424e98"
+        }
+      ]
+    },
+    {
+      "panel": "e",
+      "paper_label": "Trans-SAR",
+      "actual_method": "Trans-SAR",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\e_trans-sar.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\e_trans-sar.png",
+      "asset_sha256": "43b4b880dec893babe6adfd0fdfe1098fdf75c678e04503d9c24bb8f5bab089b",
+      "source_sha256": "43b4b880dec893babe6adfd0fdfe1098fdf75c678e04503d9c24bb8f5bab089b",
+      "recorded_source_sha256": "43b4b880dec893babe6adfd0fdfe1098fdf75c678e04503d9c24bb8f5bab089b",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "45345aa3887bc94239a7be61a906d56d2e9ae2af469bec888d3f2de6b8cadad1",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im13.png",
+          "pixel_sha256_rgb": "45345aa3887bc94239a7be61a906d56d2e9ae2af469bec888d3f2de6b8cadad1"
+        }
+      ]
+    },
+    {
+      "panel": "f",
+      "paper_label": "Ours-base",
+      "actual_method": "MERLIN",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\f_ours-base.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\g_merlin.png",
+      "asset_sha256": "72037c2ba6666eb482a1ee2587d4f46e27336f9d3e120904a13819a420fe646c",
+      "source_sha256": "72037c2ba6666eb482a1ee2587d4f46e27336f9d3e120904a13819a420fe646c",
+      "recorded_source_sha256": "72037c2ba6666eb482a1ee2587d4f46e27336f9d3e120904a13819a420fe646c",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "f12a020641307c55f38ea08882fc342e7cb7563c7c2b66b1992cb89c98359730",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im14.png",
+          "pixel_sha256_rgb": "f12a020641307c55f38ea08882fc342e7cb7563c7c2b66b1992cb89c98359730"
+        }
+      ]
+    },
+    {
+      "panel": "g",
+      "paper_label": "Ours+AMS",
+      "actual_method": "MuLoG-DRUNet",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\g_ours-ams.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\h_mulog-drunet.png",
+      "asset_sha256": "7f830777f08203e58a2139aff0f4525fcda6cffe2e86e0ba54ce1fd105ddeec6",
+      "source_sha256": "7f830777f08203e58a2139aff0f4525fcda6cffe2e86e0ba54ce1fd105ddeec6",
+      "recorded_source_sha256": "7f830777f08203e58a2139aff0f4525fcda6cffe2e86e0ba54ce1fd105ddeec6",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "80159f03318d4db939e907a3fa8886bcdc7ecfebb94ab2c66e5b15d726354c05",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im15.png",
+          "pixel_sha256_rgb": "80159f03318d4db939e907a3fa8886bcdc7ecfebb94ab2c66e5b15d726354c05"
+        }
+      ]
+    },
+    {
+      "panel": "h",
+      "paper_label": "Ours+AMS ratio",
+      "actual_method": "MuLoG-DRUNet ratio",
+      "paper_asset": "D:\\research\\sar_transformer-main\\docs\\GRSL_LaTeX\\figures\\fig5_v3\\h_ours-ams-ratio.png",
+      "source_export": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\panels\\i_mulog-drunet_ratio.png",
+      "asset_sha256": "b24f435fe4c0c14f81c4ce0a5f2ebc1d787602b99670091e0e72a5ab586fa70b",
+      "source_sha256": "b24f435fe4c0c14f81c4ce0a5f2ebc1d787602b99670091e0e72a5ab586fa70b",
+      "recorded_source_sha256": "b24f435fe4c0c14f81c4ce0a5f2ebc1d787602b99670091e0e72a5ab586fa70b",
+      "byte_identical": true,
+      "source_matches_recorded_sha256": true,
+      "pixel_sha256_rgb": "450fccc02996f523fb6a58c1f437582e1203563ed1d3450cb50efc9e5f1c8df0",
+      "pdf_embedded_matches": [
+        {
+          "page": 4,
+          "object_name": "Im16.png",
+          "pixel_sha256_rgb": "450fccc02996f523fb6a58c1f437582e1203563ed1d3450cb50efc9e5f1c8df0"
+        }
+      ]
+    }
+  ],
+  "experiment_source_file_checks": [
+    {
+      "method": "Noisy",
+      "path": "D:\\research\\sar_transformer-main\\output\\cl_sar_umbra_buenos_aires\\figure3_clsar_final\\noisy_intensity.npy",
+      "recorded_sha256": "11d3f703329aaf133eb8560a84270736246119808032b626eb28bce6f6014b1e",
+      "actual_sha256": "11d3f703329aaf133eb8560a84270736246119808032b626eb28bce6f6014b1e",
+      "matches": true
+    },
+    {
+      "method": "Noisy",
+      "path": "D:\\research\\sar_transformer-main\\output\\cl_sar_umbra_buenos_aires\\figure3_clsar_final\\run.json",
+      "recorded_sha256": "3c475851cd4ab100fc0a8f00e37b3661cd11c56c1e7f39f2cf3f4356480e348b",
+      "actual_sha256": "3c475851cd4ab100fc0a8f00e37b3661cd11c56c1e7f39f2cf3f4356480e348b",
+      "matches": true
+    },
+    {
+      "method": "SAR-BM3D",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\sarbm3d\\result.mat",
+      "recorded_sha256": "26f42667c38036b38cedc4a7ee642d502aa860ee513e735218a4fe6845993f67",
+      "actual_sha256": "26f42667c38036b38cedc4a7ee642d502aa860ee513e735218a4fe6845993f67",
+      "matches": true
+    },
+    {
+      "method": "SAR-BM3D",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\sarbm3d\\summary.json",
+      "recorded_sha256": "2d2faa03d3b62c1a0d45f03de5977afa7f1a7cf970efb1482507d9d82128ca42",
+      "actual_sha256": "2d2faa03d3b62c1a0d45f03de5977afa7f1a7cf970efb1482507d9d82128ca42",
+      "matches": true
+    },
+    {
+      "method": "SAR2SAR",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\sar2sar\\result.mat",
+      "recorded_sha256": "86b8d5d3eb133c56d271874be38f4dd641863691c851bea4941abf2da8f2a5f7",
+      "actual_sha256": "86b8d5d3eb133c56d271874be38f4dd641863691c851bea4941abf2da8f2a5f7",
+      "matches": true
+    },
+    {
+      "method": "SAR2SAR",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\sar2sar\\summary.json",
+      "recorded_sha256": "df2ce309c58413257e6bd87c95f009aa5bb0b3e75cac1ee3b1d94bf07d4ec2f0",
+      "actual_sha256": "df2ce309c58413257e6bd87c95f009aa5bb0b3e75cac1ee3b1d94bf07d4ec2f0",
+      "matches": true
+    },
+    {
+      "method": "SDUDNet",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\sdudnet_db_display\\denoised.npy",
+      "recorded_sha256": "20151fad70c3a1fbb4ab339ee6e0c2b7bac23620909838db995a321ba699b9f1",
+      "actual_sha256": "20151fad70c3a1fbb4ab339ee6e0c2b7bac23620909838db995a321ba699b9f1",
+      "matches": true
+    },
+    {
+      "method": "SDUDNet",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\sdudnet_db_display\\run.json",
+      "recorded_sha256": "0b6e3bb988051d8ee75bc53cb6f3426d63922eb90e7d67041449c5fad7b35ad8",
+      "actual_sha256": "0b6e3bb988051d8ee75bc53cb6f3426d63922eb90e7d67041449c5fad7b35ad8",
+      "matches": true
+    },
+    {
+      "method": "Trans-SAR",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\transsar\\denoised.npy",
+      "recorded_sha256": "f9d92a43097893080ce720fcc11398050abe6622f6d1147726090df612324e54",
+      "actual_sha256": "f9d92a43097893080ce720fcc11398050abe6622f6d1147726090df612324e54",
+      "matches": true
+    },
+    {
+      "method": "Trans-SAR",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\transsar\\run.json",
+      "recorded_sha256": "a4a63063bd2245dd6d4ae2af57397ad43318c1e1d68222851883564e4ee2ebc1",
+      "actual_sha256": "a4a63063bd2245dd6d4ae2af57397ad43318c1e1d68222851883564e4ee2ebc1",
+      "matches": true
+    },
+    {
+      "method": "MERLIN",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\merlin_stride64_weighted\\denoised.npy",
+      "recorded_sha256": "4961d03db8d892f7392687675eb1f48443774659801f1f0a0ed95d3c4bc07390",
+      "actual_sha256": "4961d03db8d892f7392687675eb1f48443774659801f1f0a0ed95d3c4bc07390",
+      "matches": true
+    },
+    {
+      "method": "MERLIN",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\merlin_stride64_weighted\\run.json",
+      "recorded_sha256": "cd75642a744076cef052e1d5c3156f72e1b408babc806517d3b4d9dc80f3640b",
+      "actual_sha256": "cd75642a744076cef052e1d5c3156f72e1b408babc806517d3b4d9dc80f3640b",
+      "matches": true
+    },
+    {
+      "method": "MuLoG-DRUNet",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\mulog_drunet\\denoised.npy",
+      "recorded_sha256": "a5db1b6467a736a62e12457701ba285211e02e3d9f7c30cd0073c9fa6c497385",
+      "actual_sha256": "a5db1b6467a736a62e12457701ba285211e02e3d9f7c30cd0073c9fa6c497385",
+      "matches": true
+    },
+    {
+      "method": "MuLoG-DRUNet",
+      "path": "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\runs\\mulog_drunet\\run.json",
+      "recorded_sha256": "f5817915111ea50f4bebff02b221dbb65d79e873ed12fd0b0879b0b3b6516936",
+      "actual_sha256": "f5817915111ea50f4bebff02b221dbb65d79e873ed12fd0b0879b0b3b6516936",
+      "matches": true
+    }
+  ],
+  "all_experiment_source_hashes_match_manifest": true,
+  "scene": {
+    "sensor": "Umbra X-band Spotlight VV SICD",
+    "location": "Buenos Aires",
+    "acquisition": "2025-01-31",
+    "roi": {
+      "row_start": 7456,
+      "col_start": 17256,
+      "height": 1024,
+      "width": 1024,
+      "center_latitude_deg": -34.58670400173253,
+      "center_longitude_deg": -58.37800039641809
+    }
+  },
+  "display": {
+    "primary_mapping": "10*log10(linear intensity); noisy-derived shared affine map except for the disclosed display-only MERLIN median-aligned window shift",
+    "shared_db_limits": [
+      -13.583520412445068,
+      27.24244294166567
+    ],
+    "shared_db_methods": [
+      "Noisy",
+      "SAR-BM3D",
+      "SAR2SAR",
+      "SDUDNet",
+      "Trans-SAR",
+      "CL-SAR",
+      "MuLoG-DRUNet"
+    ],
+    "shared_limits_source": "noisy ROI percentiles 1.0 and 99.7",
+    "per_method_autocontrast": true,
+    "per_method_autocontrast_methods": [
+      "MERLIN"
+    ],
+    "merlin_primary_db_limits": [
+      -3.430542241599859,
+      37.395421112510874
+    ],
+    "merlin_limits_source": "same span as the noisy-derived window, translated by the MERLIN-minus-noisy median dB offset",
+    "merlin_display_shift_db": 10.15297817084521,
+    "strict_shared_db_figure": "figure3_umbra_buenos_aires_methods_strict_shared_db_600dpi.png",
+    "panel_pixels": [
+      1024,
+      1024
+    ],
+    "panel_png_mode": "8-bit grayscale",
+    "figure_dpi": 600,
+    "figure_pixels": [
+      2091,
+      1345
+    ],
+    "word_panel_size_mm": 21.06
+  },
+  "ratio": {
+    "actual_method": "MuLoG-DRUNet",
+    "definition": "10*log10(noisy / MuLoG-DRUNet output)",
+    "saved_ratio_exactly_reconstructed_from_raw_arrays": true,
+    "display_range_db": [
+      -19.22201919555664,
+      19.22201919555664
+    ]
+  },
+  "run_details": {
+    "SAR-BM3D": {
+      "implementation": "authors SARBM3D_v10",
+      "looks": 1
+    },
+    "SAR2SAR": {
+      "checkpoint": "SAR2SAR-tensorflow-98550",
+      "patch_size": 256,
+      "stride_size": 64
+    },
+    "SDUDNet": {
+      "checkpoint": "real.pth",
+      "input": "noisy 8-bit dB display divided by 255"
+    },
+    "Trans-SAR": {
+      "architecture": "official TransSARV2",
+      "checkpoint": "pretrained_models/model.pth",
+      "input": "fixed-scale amplitude adapter"
+    },
+    "MERLIN": {
+      "checkpoint": "spotlight.pth",
+      "patch_size": 256,
+      "stride_size": 64,
+      "aggregation": "positive Hann weighted overlap",
+      "display_window_shift_db": 10.15297817084521
+    },
+    "MuLoG-DRUNet": {
+      "checkpoint": "generic_model.pth",
+      "looks": 1,
+      "admm_iterations": 10,
+      "newton_iterations": 10
+    }
+  },
+  "evidence_manifests": [
+    "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\manifest.json",
+    "D:\\research\\sar_transformer-main\\output\\umbra_buenos_aires_multimethod_1024\\figure3\\word_copy_with_mulog_ratio\\manifest.json"
+  ]
+}

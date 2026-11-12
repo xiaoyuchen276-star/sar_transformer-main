@@ -1,0 +1,134 @@
+{
+  "source": {
+    "repository": "https://gitlab.telecom-paris.fr/ring/mulog-drunet",
+    "commit": "f468573f5bd4d7d30065380b8580269bcefbec19",
+    "source_archive_sha256": "74204053abd6c28b3b56bbf1205e5a60f8463f081499e9b5d70679d334534594",
+    "model_download_url": "https://gitlab.telecom-paris.fr/api/v4/projects/6784/repository/blobs/eff7e4c921bdd05caf875b126e7a8432c6c4d3e8/raw",
+    "model_archive_git_blob_identifier_for_url": "eff7e4c921bdd05caf875b126e7a8432c6c4d3e8",
+    "complete_model_archive_verified": false,
+    "checkpoint": "D:\\research\\sar_transformer-main\\external\\MuLoG-DRUNet\\models\\generic_model.pth",
+    "checkpoint_sha256": "20bc285c8710214003f72bdf5e48004c1accb63547d4a304c89714c385dff124",
+    "checkpoint_verification_level": "fixed_checkpoint_sha256",
+    "checkpoint_independent_sha256_pin_available": true,
+    "official_sources_unchanged": true,
+    "strict_state_dict_loaded": true,
+    "registered_parameters": 32638656
+  },
+  "looks": 5,
+  "looks_source": "GRD metadata 1 range x 5 azimuth looks",
+  "iterations": 10,
+  "seconds": 438.71822379999867,
+  "imaginary_residue_max": 0.0,
+  "Newton_row_batch": 64,
+  "Newton_row_batch_validation_max_absolute_error": 0.0,
+  "tiling": {
+    "DRUNet_core": 512,
+    "DRUNet_halo": 128,
+    "ADMM_and_quantiles": "whole image"
+  },
+  "denoiser_calls": [
+    {
+      "sig": 1.0,
+      "quantile_003": -3.9695105118645104,
+      "quantile_997": 8.363365226507046,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.9377544562511915,
+      "quantile_997": 8.265858801973561,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.756913535517815,
+      "quantile_997": 8.211926785151832,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.6818482943853716,
+      "quantile_997": 8.1825212920836,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.6463741243216905,
+      "quantile_997": 8.168965939704862,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.6282737393656355,
+      "quantile_997": 8.160707404378027,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.6186042494820927,
+      "quantile_997": 8.156793118063346,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.6132002899633093,
+      "quantile_997": 8.155219319952696,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.610221036385407,
+      "quantile_997": 8.154202677382788,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    },
+    {
+      "sig": 0.8451542547285166,
+      "quantile_003": -2.6082657552394806,
+      "quantile_997": 8.153787298358274,
+      "padding_bottom_right": [
+        0,
+        0
+      ]
+    }
+  ],
+  "method": "mulog_drunet",
+  "complete": true,
+  "total_seconds": 443.9837744999986,
+  "shape": [
+    3072,
+    3072
+  ],
+  "minimum": 0.019768934960913306,
+  "maximum": 1443.4701628162168,
+  "mean": 0.11759823773551631,
+  "zero_fraction": 0.0,
+  "output_sha256": "8f9ee36c082768c3c140e09178f0091765c02e1dc55a0909c3e949fd11347341",
+  "script_sha256": "6584f099d07a5c1d14b182cf59635cd1996a2f8c54d0c52a16a8b50aa32fa738"
+}

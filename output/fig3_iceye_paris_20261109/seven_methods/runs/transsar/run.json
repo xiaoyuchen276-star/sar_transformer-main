@@ -1,0 +1,82 @@
+{
+  "source_commit": "b3ac845f96f2332aa4f1af94b455f71630978b17",
+  "checkpoint": "D:\\research\\sar_transformer-main\\trained_models\\comparison_baselines\\trans-sar\\model.pth",
+  "checkpoint_sha256": "cdab8293c7b6ea72ccd192c119b1368b6d661b739d52cc43611cc75755263a70",
+  "strict_state_tensors": 394,
+  "key_transform": "stripped one uniform leading 'module.' DataParallel prefix",
+  "tiling": {
+    "tile_size": 256,
+    "overlap": 64,
+    "stride": 192,
+    "reflect_pad_each_side": 128,
+    "padding_mode": "reflect",
+    "padded_shape": [
+      3328,
+      3328
+    ],
+    "row_starts": [
+      0,
+      192,
+      384,
+      576,
+      768,
+      960,
+      1152,
+      1344,
+      1536,
+      1728,
+      1920,
+      2112,
+      2304,
+      2496,
+      2688,
+      2880,
+      3072
+    ],
+    "col_starts": [
+      0,
+      192,
+      384,
+      576,
+      768,
+      960,
+      1152,
+      1344,
+      1536,
+      1728,
+      1920,
+      2112,
+      2304,
+      2496,
+      2688,
+      2880,
+      3072
+    ],
+    "tile_count": 289,
+    "blend": "separable complementary sin^2/cos^2 ramps over each overlap",
+    "accumulator_dtype": "float64",
+    "cropped_weight_sum_min": 0.9999999999999997,
+    "cropped_weight_sum_max": 1.0000000000000004,
+    "forward_seconds": 9.134173100001135,
+    "output_shape_after_crop": [
+      3072,
+      3072
+    ]
+  },
+  "input_domain": "globally peak-normalized amplitude with official (255*A+1)/256 mapping",
+  "intensity_scale": 3217.826416015625,
+  "output_clipped_fraction": 0.0,
+  "method": "transsar",
+  "complete": true,
+  "total_seconds": 20.354163200001494,
+  "shape": [
+    3072,
+    3072
+  ],
+  "minimum": 0.04461335390806198,
+  "maximum": 1338.87451171875,
+  "mean": 0.14999781645696095,
+  "zero_fraction": 0.0,
+  "output_sha256": "a13203451b7d5f8c5594f606444c319ee573526b64990c04ee58fec65dae232a",
+  "script_sha256": "7c16dde287cfffcdb9a18221fe693fc235a46504b9964c667c52fb6aa233b13e"
+}

@@ -1,0 +1,18 @@
+{
+  "input": "native complex SLC",
+  "native_output": "denoised.npy",
+  "projection": "bilinear interpolant integrated with 4x4 samples per GRD cell",
+  "calibration": "sigma0 = CF * SLC_DN_power * sin(incidence_angle)",
+  "calibration_factor": 1.412387683883416e-05,
+  "incidence_angle_range_deg": [
+    30.057582544055876,
+    30.12072049882139
+  ],
+  "coordinates": "grd_to_slc_coordinates.npy",
+  "ratio_numerator": "slc_observed_on_grd_sigma0.npy",
+  "output": "denoised_grd_sigma0.npy",
+  "display_product_gain": 0.1652901977687432,
+  "display_product_gain_source": "mean(GRD observed H) / mean(projected SLC observed H)",
+  "display_product_gain_applied_to_scientific_array": false,
+  "input_scale_discrepancy_H_before_matching": 6.049965536365899
+}

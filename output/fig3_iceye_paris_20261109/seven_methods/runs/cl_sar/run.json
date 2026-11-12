@@ -1,0 +1,75 @@
+{
+  "source": {
+    "repository": "https://github.com/YangtianFang2002/CL-SAR-Despeckling",
+    "commit": "b12129d1d3448750b9098b239397587eeb359857",
+    "tracked_sources_unchanged": true,
+    "source_sha256": {
+      "basicsr/models/archs/MDN1_arch.py": "0ae4b108e8a20228e99f0266e9ca8e7825c1ecb23c3202b06e28c3e12e7681fa",
+      "basicsr/models/archs/arch_util.py": "026e6fe75af14a6315e3daaad933ce6e83aaaa3f9c90829cb387ad8483a7a56b",
+      "basicsr/data/data_util.py": "958f1645bd58d1845183612b17f3dca304f51c6c4facbcd298d0f31166774926",
+      "basicsr/utils/img_util.py": "d09fb9fc3cbbc7a8e33d04608bbe9e7de8f7eb315f077a0681c3dc3eb02070e5",
+      "basicsr/predict.py": "5ca1e06f851bc655b0e31f33834b60342c97d7d39c0e522c736411a91631e870",
+      "options/real/MDN1-default.yml": "b9d45adf5b40eccd93a3c1cf6412281a417e29d9e06747d8c72ffe3815d98f6d"
+    },
+    "checkpoint": "D:\\research\\sar_transformer-main\\external\\CL-SAR\\experiments\\MDN1-default\\models\\net_g_latest.pth",
+    "checkpoint_sha256": "94765b1e6dfb7584842dbad4b3683a566f77c5b3d85595dbb8913f90fef8c80b",
+    "checkpoint_bytes": 40347040,
+    "checkpoint_parameter_key": "params",
+    "official_pretrained": true,
+    "strict_state_dict_loaded": true,
+    "model_config": {
+      "img_channel": 1,
+      "width": 32,
+      "sc_width": 32,
+      "eap_pooling": "max",
+      "enc_blk_nums": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "middle_blk_num": 2,
+      "dec_blk_nums": [
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    "registered_parameters": 10038249,
+    "eval_mode": true,
+    "import_compatibility": "temporary namespace packages; logging-only shim; original model unchanged"
+  },
+  "normalization": {
+    "input_domain": "intensity",
+    "output_domain": "intensity",
+    "scale": 1.0,
+    "sqrt_input": true,
+    "amplitude_min_nonzero": 0.018790872767567635,
+    "amplitude_max": 56.725887298583984,
+    "formula": "abs((amplitude - min_nonzero_amplitude) / (max_amplitude - min_nonzero_amplitude))",
+    "input_clipped": false,
+    "zero_pixel_count": 0,
+    "normalized_input_min": 0.0,
+    "normalized_input_max": 1.0,
+    "zero_and_constant_policy": "reject undefined official normalization; no invented epsilon fallback"
+  },
+  "tiling": {
+    "core": 512,
+    "halo": 128
+  },
+  "clipped_output_fraction": 2.3735894097222223e-05,
+  "method": "cl_sar",
+  "complete": true,
+  "total_seconds": 35.370034399998985,
+  "shape": [
+    3072,
+    3072
+  ],
+  "minimum": 0.0003530968970153481,
+  "maximum": 3217.826171875,
+  "mean": 0.1425275615127829,
+  "zero_fraction": 0.0,
+  "output_sha256": "fff876d9cb4a1899e58a1c38b4db7247a0dfeb06a2f59602fbea56a3f995d54a",
+  "script_sha256": "7c16dde287cfffcdb9a18221fe693fc235a46504b9964c667c52fb6aa233b13e"
+}

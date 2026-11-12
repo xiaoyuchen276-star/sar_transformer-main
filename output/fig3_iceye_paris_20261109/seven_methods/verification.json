@@ -1,0 +1,214 @@
+{
+  "scene": "fig3_iceye_paris_20261109",
+  "all_seven_complete": true,
+  "input_unchanged": true,
+  "input": {
+    "source": {
+      "path": "D:\\research\\sar_transformer-main\\output\\fig3_iceye_paris_20261109\\crops\\fig3_view_sigma0.tif",
+      "sha256": "3ab5c55bc1ae2fd8cfeb5c622da34b0ea4f4836d60e31ceb9b3ab034dd381088"
+    },
+    "roi": {
+      "height": 3072,
+      "width": 3072,
+      "row_start": 512,
+      "col_start": 3328
+    },
+    "domain": "calibrated GRD sigma0",
+    "display": {
+      "shared_db_limits": [
+        -18,
+        0
+      ]
+    },
+    "looks": 5
+  },
+  "results": [
+    {
+      "method": "sarbm3d",
+      "aligned_array": "runs/sarbm3d/denoised.npy",
+      "sha256": "8abbb9d5fbb8a7432029aff655268f9b24e07aa1b25f37fa0f26bdf33bd73f1e",
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "float32",
+      "minimum": 0.002649816684424877,
+      "maximum": 2995.18359375,
+      "zero_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "method": "sar2sar",
+      "aligned_array": "runs/sar2sar/denoised.npy",
+      "sha256": "7fe5ebd97ec66fa064c57c594f6a5b8a138c02a17e34dd997931a5a7886b86ce",
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "float32",
+      "minimum": 8.099429464891728e-07,
+      "maximum": 1560.0526123046875,
+      "zero_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "method": "sdudnet",
+      "aligned_array": "runs/sdudnet/denoised.npy",
+      "sha256": "7cab7f940cfc2a9ab809121d029150bd59fdd3523a243fceb64c69c291cd5823",
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "float32",
+      "minimum": 0.015848932787775993,
+      "maximum": 1.0,
+      "zero_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "method": "transsar",
+      "aligned_array": "runs/transsar/denoised.npy",
+      "sha256": "a13203451b7d5f8c5594f606444c319ee573526b64990c04ee58fec65dae232a",
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "float32",
+      "minimum": 0.04461335390806198,
+      "maximum": 1338.87451171875,
+      "zero_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "method": "cl_sar",
+      "aligned_array": "runs/cl_sar/denoised.npy",
+      "sha256": "fff876d9cb4a1899e58a1c38b4db7247a0dfeb06a2f59602fbea56a3f995d54a",
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "float32",
+      "minimum": 0.0003530968970153481,
+      "maximum": 3217.826171875,
+      "zero_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "method": "merlin",
+      "aligned_array": "runs/merlin/denoised_grd_sigma0.npy",
+      "sha256": "18e42ad35a55e801c1619769ebcfb5a68ceb38d0113ed158adba290a8bd4f855",
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "float32",
+      "minimum": 0.06257250905036926,
+      "maximum": 6911.4365234375,
+      "zero_fraction": 0.0,
+      "all_finite": true
+    },
+    {
+      "method": "mulog_drunet",
+      "aligned_array": "runs/mulog_drunet/denoised.npy",
+      "sha256": "8f9ee36c082768c3c140e09178f0091765c02e1dc55a0909c3e949fd11347341",
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "float32",
+      "minimum": 0.019768934696912766,
+      "maximum": 1443.47021484375,
+      "zero_fraction": 0.0,
+      "all_finite": true
+    }
+  ],
+  "merlin_projection": {
+    "input": "native complex SLC",
+    "native_output": "denoised.npy",
+    "projection": "bilinear interpolant integrated with 4x4 samples per GRD cell",
+    "calibration": "sigma0 = CF * SLC_DN_power * sin(incidence_angle)",
+    "calibration_factor": 1.412387683883416e-05,
+    "incidence_angle_range_deg": [
+      30.057582544055876,
+      30.12072049882139
+    ],
+    "coordinates": "grd_to_slc_coordinates.npy",
+    "ratio_numerator": "slc_observed_on_grd_sigma0.npy",
+    "output": "denoised_grd_sigma0.npy",
+    "display_product_gain": 0.1652901977687432,
+    "display_product_gain_source": "mean(GRD observed H) / mean(projected SLC observed H)",
+    "display_product_gain_applied_to_scientific_array": false,
+    "input_scale_discrepancy_H_before_matching": 6.049965536365899
+  },
+  "sar2sar_parity": {
+    "passed": true,
+    "input": "original ICEYE Paris H amplitude DN",
+    "shape": [
+      384,
+      384
+    ],
+    "source_commit": "ca3c783333cbe072743f0b8060b5f168b9f0db11",
+    "reference": "authors u_net.py + model.denoiser.test + utils.py, original checkpoint",
+    "reference_compatibility_changes": [
+      "TensorFlow imports -> compat.v1",
+      "unused regularizer -> None"
+    ],
+    "bitwise_equal": true,
+    "maximum_absolute_amplitude_difference": 0.0,
+    "original_reference_output_ENL": 1.409457008212974,
+    "execution": {
+      "patch_size": 256,
+      "stride_size": 64,
+      "patch_count": 9,
+      "minimum_patch_coverage": 1,
+      "maximum_patch_coverage": 9,
+      "inference_seconds": 1.8657084999995277,
+      "output_tensor": "sub:0",
+      "checkpoint_prefix": "D:\\research\\sar_transformer-main\\external\\SAR2SAR\\SAR2SAR-test\\checkpoint\\SAR2SAR-tensorflow-98550",
+      "checkpoint_sha256": {
+        "SAR2SAR-tensorflow-98550.data-00000-of-00001": "aeef94411aff04f63c2b9e5c534b929792a9967901972a9241435312bc7fa8e9",
+        "SAR2SAR-tensorflow-98550.index": "21a7220c846654fa905a9fc12cb4835461e29baf9a998974eaa34a6477232fd8",
+        "SAR2SAR-tensorflow-98550.meta": "073ba52184c8555497ea7be9f40090f7eec1b33ec0a165d9290ac67a5f048c63"
+      },
+      "graph_execution": "original TF1.13.1 .meta imported with TensorFlow compat.v1; no architecture rewrite"
+    }
+  },
+  "figure_checksums": {
+    "figures/comparison_8panel.png": "048588738feb5655d1574da1b8d0e3cda9ce9cd313178f77b7083ea69a4d428f",
+    "figures/comparison_8panel_metadata_scale.png": "340ed95199ecd30b87fdd2dbf27cc9b340c5fcbced8206a76c5eecdac4947e5b",
+    "figures/comparison_preview.png": "0b115380ec268e8197726c4d22e1eef06095e1b2e1d07b92d362fa923619a277",
+    "figures/panels/a_noisy.png": "3822a2640f4df1b184e5e74442c1a9eb64043230e444a3b35ff3494d1ecd6064",
+    "figures/panels/b_sar-bm3d.png": "af276ba0fcd5e762488332d452fc1f9140c1802ef2b68b6b4edc80148503cfd5",
+    "figures/panels/c_sar2sar.png": "7939f3e348ba206dd7213f2f8b90794882479b6b6f9b5d52a1a8ee47eead750e",
+    "figures/panels/d_sdudnet.png": "7cf1cf48ad08537ff9077cee687c8990489756b915af645b3089b6a4470e8b88",
+    "figures/panels/e_trans-sar.png": "ffb5043941b36628b69488a5543887da8069006c27b2755e60e621fe86daf5a6",
+    "figures/panels/f_cl-sar.png": "c88f79d65dbbda916e1f2766192703660bf7c18c74b164b8a7b385721b4bbca8",
+    "figures/panels/g_merlin.png": "ea9d27ab138e33ad22ba66c700fbd81cf55667e2143b125c4ff0e350dbc53162",
+    "figures/panels/g_merlin_metadata_scale.png": "ca0374b2664a4e4b75f2bb3dbd6358d3f031d406a42e496dc991a2528463af30",
+    "figures/panels/h_mulog-drunet.png": "5a162dfcde712e1241e302abd75799ab9c9c31539ea1ccdd1bf0190a9fc3f7b0",
+    "figures/ratio_8panel.png": "cc1b0df97dece7e757e61f552ab43d5cabd5485ed0242d532c313b2a36fd1f58",
+    "figures/ratios/b_sar-bm3d_ratio.png": "4ece839b3f7443659c97e4705f0b0e3eb2f45eae6dd329be59cdf3076019ee2a",
+    "figures/ratios/c_sar2sar_ratio.png": "648181e10469fd4e6576338709f0c906fcbb78a2bc46db52ed2b62213edd93b5",
+    "figures/ratios/d_sdudnet_ratio.png": "a55e2810708902f1017459ff3f519348d9e55837f9122edc8d36185ab99569dc",
+    "figures/ratios/e_trans-sar_ratio.png": "8ef6d99fc153b55b3867f716e8b9dae8375184ed90a0ef2d3c4bf8368aa1981c",
+    "figures/ratios/f_cl-sar_ratio.png": "34d80785199eb8ef5a9361d6225a6bbd59a366b38ddd6c12ebe3059be8f995cc",
+    "figures/ratios/g_merlin_ratio.png": "6b987ccab1438c6559c642c0bad42aa01eb8f49a77190bd1615723a1cd3fde6b",
+    "figures/ratios/h_mulog-drunet_ratio.png": "706588585497fe291dfba7f311da5fa514038a5266fcafc75e1ce879be3b5c47",
+    "figures/roi_H_8panel.png": "bba2de653f3cb46ec307acd8a503854a51fc901609a0a250cf923aacc11bb33c",
+    "figures/roi_H_ratios.png": "bda8bcff06433be8d2de29ef00aaf92a7686b2adfb6d4fec85ea5093cff437e1",
+    "figures/roi_S_8panel.png": "eac86ab0b19eee2f108b2c2078179a952fcbba5407916b8a6f6c592c8b4b2590",
+    "figures/roi_S_ratios.png": "0342ebd077b965b563f8b54fc777787c4ead5d94e253c339b1ba180595bb7747",
+    "figures/roi_T_8panel.png": "f3af8d530175adf5f7f362e02982cd274eabbc79b221e00358fe1c6d5f2cf2cd",
+    "figures/roi_T_ratios.png": "3879b05b755b86f42eed42815862789e7ca202d2d4ec0982ceac8deeb5c06132"
+  },
+  "script_checksums": {
+    "finalize_outputs.py": "bfe377cee6766eda6b91bb4927c767fe4302fe03cd6f00887d8ed9e0a8ac2941",
+    "prepare_grd.py": "f6399938e66c4111bdea1ea53bb202be28b3c0b1dd170441d9aa521c4ec12ef6",
+    "prepare_slc.py": "a555b5867ce91aa6df27084a0e54bd254450917847567b6a93f2f713b695798f",
+    "project_merlin.py": "deb4ca8672f41566be10668d59f46cb6e626688aeb6fbd6f3d1b21e56c7fcc89",
+    "render_results.py": "3d16e42062d53ab9a4a1f16401596011f4b3db75dab930c51fd6d5c88f700e99",
+    "run_method.py": "6584f099d07a5c1d14b182cf59635cd1996a2f8c54d0c52a16a8b50aa32fa738",
+    "run_sarbm3d_tiles.m": "a2d0239f858b927e941210e904d758717198d6a733d5a9ee680bfab441243223",
+    "verify_sar2sar.py": "16f46c2659122c01cd57dfa74b8a32b6c676f55e9237debb2c9ad364bf1e3fdb"
+  }
+}

@@ -119,6 +119,10 @@ venv/
 /output/fig3_iceye_paris_20261109/raw/*.part
 /output/fig3_iceye_paris_20261109/raw/download_ranges.json
 /output/fig3_iceye_paris_20261109/crops/*.npy
+# Reproducible ICEYE arrays, MATLAB intermediates, and duplicate preview archive.
+/output/fig3_iceye_paris_20261109/seven_methods/**/*.npy
+/output/fig3_iceye_paris_20261109/seven_methods/**/*.mat
+/output/fig3_iceye_paris_20261109/seven_methods/seven_methods_previews.zip
 /output/去噪效果展示_*.docx
 
 # Duplicate GRSL submission render copies retained locally

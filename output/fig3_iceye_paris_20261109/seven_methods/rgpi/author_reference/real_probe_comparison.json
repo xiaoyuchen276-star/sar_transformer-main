@@ -1,0 +1,18 @@
+{
+  "identity_rgpi": 0.3485575194162849,
+  "identity_seconds": 0.684582,
+  "real_rgpi": 0.2636266314176491,
+  "real_seconds": 3.0638124,
+  "swap_rgpi": 0.12771012478206956,
+  "w1_rgpi": -0.013757154531271052,
+  "source": "Ma et al. Remote Sensing 2022,14(4),856",
+  "doi": "https://doi.org/10.3390/rs14040856",
+  "author_repository": "https://github.com/ZX-HUB561/SAR_RGPI",
+  "real_probe_region": "H top-left 128x128; rows [1696,1824), columns [2624,2752)",
+  "method": "SAR-BM3D",
+  "input_domain": "linear intensity float64; from saved GRD/scientific method arrays",
+  "formula_real_rgpi": 0.04155241359829779,
+  "comparison": "Author protected .p outputs do not agree with explicit equation (15),(17),(18) implementation. No numeric reproduction claim. Do not mix the two result families.",
+  "timing_note": "First-call wall time includes initialization/JIT; identity is a warmed call. No whole-scene author-package execution performed.",
+  "product_probe": "On probe.mat RGPI(Y,F,5,9) equals RGPI(Y,F,9,5) exactly. This alone does not establish the hidden implementation details."
+}

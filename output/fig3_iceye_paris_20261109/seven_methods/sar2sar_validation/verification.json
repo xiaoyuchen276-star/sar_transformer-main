@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "input": "original ICEYE Paris H amplitude DN",
+  "shape": [
+    384,
+    384
+  ],
+  "source_commit": "ca3c783333cbe072743f0b8060b5f168b9f0db11",
+  "reference": "authors u_net.py + model.denoiser.test + utils.py, original checkpoint",
+  "reference_compatibility_changes": [
+    "TensorFlow imports -> compat.v1",
+    "unused regularizer -> None"
+  ],
+  "bitwise_equal": true,
+  "maximum_absolute_amplitude_difference": 0.0,
+  "original_reference_output_ENL": 1.409457008212974,
+  "execution": {
+    "patch_size": 256,
+    "stride_size": 64,
+    "patch_count": 9,
+    "minimum_patch_coverage": 1,
+    "maximum_patch_coverage": 9,
+    "inference_seconds": 1.8657084999995277,
+    "output_tensor": "sub:0",
+    "checkpoint_prefix": "D:\\research\\sar_transformer-main\\external\\SAR2SAR\\SAR2SAR-test\\checkpoint\\SAR2SAR-tensorflow-98550",
+    "checkpoint_sha256": {
+      "SAR2SAR-tensorflow-98550.data-00000-of-00001": "aeef94411aff04f63c2b9e5c534b929792a9967901972a9241435312bc7fa8e9",
+      "SAR2SAR-tensorflow-98550.index": "21a7220c846654fa905a9fc12cb4835461e29baf9a998974eaa34a6477232fd8",
+      "SAR2SAR-tensorflow-98550.meta": "073ba52184c8555497ea7be9f40090f7eec1b33ec0a165d9290ac67a5f048c63"
+    },
+    "graph_execution": "original TF1.13.1 .meta imported with TensorFlow compat.v1; no architecture rewrite"
+  }
+}

@@ -1,0 +1,1 @@
+load('probe.mat'); format long g; a=RGPI(Y,F,5,9); b=RGPI(Y,Y,5,9); c=RGPI(Y,2*F,5,9); d=RGPI(Y',F',5,9); e=RGPI(ones(40,43),ones(40,43),5,9); fprintf('a=%.17g b=%.17g c=%.17g d=%.17g e=%.17g\n',a,b,c,d,e); save('official_probe_result.mat','a','b','c','d','e');

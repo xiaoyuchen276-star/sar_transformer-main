@@ -1,0 +1,1 @@
+load('probe.mat'); disp(RGPI(Y,F,5,9)); disp(RGPI(Y,Y,5,9)); disp(RGPI(ones(40,43),ones(40,43),5,9)); save('probe_result.mat','Y','F');

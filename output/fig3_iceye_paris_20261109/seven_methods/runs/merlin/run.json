@@ -1,0 +1,29 @@
+{
+  "input_domain": "native single-look complex SLC DN",
+  "input_hash": "feb871a0c56f773ff1de40c3dd5edbe92c194541e5794306ad4de9ec4d51168d",
+  "checkpoint": "D:\\research\\sar_transformer-main\\external\\deepdespeckling\\deepdespeckling\\merlin\\saved_models\\spotlight.pth",
+  "checkpoint_sha256": "25a978b0d53b5b5307ca2ba57b6368a86493c4eeff24efe6ba58987b2e154a56",
+  "patch": 256,
+  "stride": 64,
+  "blend": "positive Hann in normalized log domain",
+  "seconds": 317.58138019999933,
+  "native_shape": [
+    4736,
+    8960
+  ],
+  "projection_pending": false,
+  "method": "merlin",
+  "complete": true,
+  "total_seconds": 323.4690453000003,
+  "shape": [
+    4736,
+    8960
+  ],
+  "minimum": 4603.3564453125,
+  "maximum": 2584723200.0,
+  "mean": 99399.62956229458,
+  "zero_fraction": 0.0,
+  "output_sha256": "4b440b74a7f66b6f7621b2198e6693aa28dc8d7a450100d3f216e3c2e29ee07d",
+  "script_sha256": "6584f099d07a5c1d14b182cf59635cd1996a2f8c54d0c52a16a8b50aa32fa738",
+  "projection_report": "projection.json"
+}
