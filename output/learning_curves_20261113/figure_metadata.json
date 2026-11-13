@@ -1,0 +1,33 @@
+{
+  "source": "D:\\research\\sar_transformer-main\\ExperimentalRecord.txt",
+  "source_sha256": "10946613b15539b9265d03f87b5ddd73edd4695fc517a08dd49f49ee652dd0ab",
+  "model": "TransSARV2_DualFreqNG_Bottle",
+  "smoothing": "none",
+  "interpolation": "none; straight lines join observed epochs",
+  "runs": {
+    "supervised": {
+      "start_time": "2026-05-04 20:27:02",
+      "epoch_count": 50,
+      "source_line_first": 251,
+      "source_line_last": 300,
+      "best_epoch": 47
+    },
+    "ams": {
+      "start_time": "2026-05-06 09:47:58",
+      "epoch_count": 8,
+      "source_line_first": 310,
+      "source_line_last": 317,
+      "best_epoch": 8
+    }
+  },
+  "available_series": [
+    "train_loss",
+    "val_loss"
+  ],
+  "protocol": "historical May 2026 runs; not the current NWPU 100k-update paper protocol",
+  "artifacts": [
+    "historical_training_validation_loss.png",
+    "historical_training_validation_loss.pdf",
+    "historical_training_validation_loss.svg"
+  ]
+}

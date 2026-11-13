@@ -1,0 +1,50 @@
+{
+  "method": "MERLIN",
+  "key": "merlin",
+  "input_product": "projected_SLC",
+  "input_sha256": "fd434836601f523d0489c9d41e98ed765caf3d8da6a99101ead096bb8cc1e1c6",
+  "output_sha256": "18e42ad35a55e801c1619769ebcfb5a68ceb38d0113ed158adba290a8bd4f855",
+  "ENL_H": 11.716687810229383,
+  "EPI_Whole": 0.5948380074244252,
+  "shape": [
+    3072,
+    3072
+  ],
+  "H_row_col_height_width": [
+    1696,
+    2624,
+    384,
+    384
+  ],
+  "M": {
+    "valid": false,
+    "reason": "no_window_satisfies_3_percent_tolerances",
+    "window": 25,
+    "tolerance": 0.03,
+    "levels": 8,
+    "shuffles": 100,
+    "seed": 42,
+    "selected_windows": 0,
+    "total_windows": 9290304,
+    "ratio_floor_pixels": 0,
+    "ratio_min": 0.09401066136262111,
+    "ratio_max": 22.500885731212236,
+    "quantization_bin_counts": [
+      9434953,
+      1954,
+      207,
+      53,
+      9,
+      2,
+      3,
+      3
+    ],
+    "largest_bin_fraction": 0.9997635947333442,
+    "first_order_mean": null,
+    "first_order_sum": null,
+    "delta_h": null,
+    "mean_variant": null,
+    "sum_variant": null
+  },
+  "seconds": 6.475769000000014
+}

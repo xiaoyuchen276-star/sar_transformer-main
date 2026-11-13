@@ -103,6 +103,31 @@ RGPI 使用 float64、gammaln 和 logaddexp 计算自然对数密度，未对概
 
 重建：在仓库根目录执行 `python scripts/iceye_paris/evaluate_rgpi.py`。验证：`python -m unittest discover -s scripts/iceye_paris -p test_rgpi_metric.py -v`。
 
+## 单景四指标测量（2026-11-14）
+
+以下使用已保存的 3072 × 3072 浮点强度结果。ENL 在固定 H 区计算（裁剪内行 1696、列 2624，384 × 384，样本方差 ddof=1）。EPI、M-index 和 RGPI 使用全裁剪；RGPI 排除外侧 3 像素边界。未使用展示亮度匹配，也未对比率分母设置生效的截断。
+
+| 方法 | ENL（H） | M-index（求和式） | EPI（全图） | RGPI（全图） |
+|---|---:|---:|---:|---:|
+| Noisy | 4.37 | — | 1.0000 | 0.0968 |
+| SAR-BM3D | 9.33 | N/A | 0.8076 | 0.0809 |
+| SAR2SAR | 1.64 | 0.4657 | 0.5929 | -2.8126 |
+| SDUDNet* | 4.38 | N/A | 0.4030 | -0.1063 |
+| Trans-SAR | 107.21 | N/A | 0.2554 | -0.8099 |
+| CL-SAR | 45.02 | 2812.5111 | 0.8218 | -0.1655 |
+| MERLIN** | 11.72 | N/A | 0.5948 | -0.0122 |
+| MuLoG-DRUNet | 36.81 | 15.1810 | 0.5347 | -0.0450 |
+
+M-index 使用 [Gómez et al. (2017)](https://www.mdpi.com/2072-4292/9/4/389) 式 (1)、(3) 的一阶残差求和形式，窗口 25 × 25、滑动步长 1、相对容差 0.03、8 级全局等宽量化、100 次随机置乱，种子 42，GLCM 水平偏移 (0,1)。这是公开公式和明确窗口约定下的计算，未宣称与作者程序逐值一致。当前项目 `classic_sar_metrics.py` 对一阶项取均值，其对应值另存为 `M_legacy_mean_variant`，不作为本表主值。SAR2SAR、CL-SAR、MuLoG-DRUNet 分别有 12、180378、279 个合格窗口；其余四种滤波输出没有合格窗口，记 N/A。Noisy 的恒等比率不给出 M-index。
+
+CL-SAR 的求和式 M-index 受合格窗口数量影响。SAR2SAR、CL-SAR 等的极大比率还使 8 级量化高度集中，M-index 不用于单独排序；SAR2SAR 的低 M 值不能解释为其暗斑输出质量较好。SDUDNet* 沿用显示域输入。MERLIN** 使用对应投影 SLC 观测，其 RGPI 的有效视数为 4.00202945；其余行使用 GRD，RGPI 名义视数为 5，MERLIN 与这些行的输入协议不同。
+
+ENL/EPI 已重新计算。RGPI 复用前核验了两种输入、七种输出及代码等全部 13 项文件的 SHA-256。M 的局部方差使用 Welford 计算，避免极大比率引起积分图相减精度损失；GLCM 局部均值采用代数等价的覆盖权重求和。两者分别与直接窗口统计、原局部 GLCM 实现核验一致。
+
+- [完整精度 CSV](seven_methods/metrics_20261114/metrics.csv)
+- [参数、分量、校验和及数值核验记录](seven_methods/metrics_20261114/report.json)
+- 重建命令：`python scripts/iceye_paris/measure_four_metrics.py --workers 2`。
+
 ## Lee-MMSE 与均值滤波基线
 
 - [全裁剪对比](analysis/whole_crop_comparison.png) 覆盖完整的 3072 × 3072 展示视野。该视野在 20000 × 20000 像素 GRD 母图中的位置见[整景定位图](previews/full_grd_selected_view.png)。

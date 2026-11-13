@@ -1,0 +1,50 @@
+{
+  "method": "Trans-SAR",
+  "key": "transsar",
+  "input_product": "GRD",
+  "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+  "output_sha256": "a13203451b7d5f8c5594f606444c319ee573526b64990c04ee58fec65dae232a",
+  "ENL_H": 107.21119338337525,
+  "EPI_Whole": 0.25543004686255827,
+  "shape": [
+    3072,
+    3072
+  ],
+  "H_row_col_height_width": [
+    1696,
+    2624,
+    384,
+    384
+  ],
+  "M": {
+    "valid": false,
+    "reason": "no_window_satisfies_3_percent_tolerances",
+    "window": 25,
+    "tolerance": 0.03,
+    "levels": 8,
+    "shuffles": 100,
+    "seed": 42,
+    "selected_windows": 0,
+    "total_windows": 9290304,
+    "ratio_floor_pixels": 0,
+    "ratio_min": 0.006061675106183854,
+    "ratio_max": 21.90831995203721,
+    "quantization_bin_counts": [
+      9394284,
+      34057,
+      6082,
+      1901,
+      650,
+      178,
+      28,
+      4
+    ],
+    "largest_bin_fraction": 0.9954541524251302,
+    "first_order_mean": null,
+    "first_order_sum": null,
+    "delta_h": null,
+    "mean_variant": null,
+    "sum_variant": null
+  },
+  "seconds": 6.794514200000037
+}

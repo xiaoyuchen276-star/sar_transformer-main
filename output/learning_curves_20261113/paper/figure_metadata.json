@@ -1,0 +1,44 @@
+{
+  "source": "D:\\research\\sar_transformer-main\\ExperimentalRecord.txt",
+  "source_sha256": "10946613b15539b9265d03f87b5ddd73edd4695fc517a08dd49f49ee652dd0ab",
+  "model": "TransSARV2_DualFreqNG_Bottle",
+  "smoothing": "none",
+  "interpolation": "none; straight lines join observed epochs",
+  "runs": {
+    "supervised": {
+      "start_time": "2026-05-04 20:27:02",
+      "epoch_count": 50,
+      "source_line_first": 251,
+      "source_line_last": 300,
+      "best_epoch": 47
+    },
+    "ams": {
+      "start_time": "2026-05-06 09:47:58",
+      "epoch_count": 8,
+      "source_line_first": 310,
+      "source_line_last": 317,
+      "best_epoch": 8
+    }
+  },
+  "available_series": [
+    "train_loss",
+    "val_loss"
+  ],
+  "author_confirmation_date": "2026-11-13",
+  "author_confirmation": "Use these 50-epoch supervised and 8-epoch AMS loss records for the manuscript figures.",
+  "initial_learning_rates": {
+    "supervised": 0.0002,
+    "ams": 2e-06
+  },
+  "artifacts": [
+    "training_validation_loss.png",
+    "training_validation_loss.pdf",
+    "training_validation_loss.svg",
+    "fig_learning_supervised.png",
+    "fig_learning_supervised.pdf",
+    "fig_learning_supervised.svg",
+    "fig_learning_ams.png",
+    "fig_learning_ams.pdf",
+    "fig_learning_ams.svg"
+  ]
+}

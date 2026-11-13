@@ -1,0 +1,52 @@
+{
+  "method": "MuLoG-DRUNet",
+  "key": "mulog_drunet",
+  "input_product": "GRD",
+  "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+  "output_sha256": "8f9ee36c082768c3c140e09178f0091765c02e1dc55a0909c3e949fd11347341",
+  "ENL_H": 36.814328145854205,
+  "EPI_Whole": 0.5346610543380698,
+  "shape": [
+    3072,
+    3072
+  ],
+  "H_row_col_height_width": [
+    1696,
+    2624,
+    384,
+    384
+  ],
+  "M": {
+    "valid": true,
+    "reason": "",
+    "window": 25,
+    "tolerance": 0.03,
+    "levels": 8,
+    "shuffles": 100,
+    "seed": 42,
+    "selected_windows": 279,
+    "total_windows": 9290304,
+    "ratio_floor_pixels": 0,
+    "ratio_min": 0.012003376766504072,
+    "ratio_max": 3.4856617333390605,
+    "quantization_bin_counts": [
+      497830,
+      3271535,
+      3745251,
+      1601558,
+      293695,
+      26066,
+      1213,
+      36
+    ],
+    "largest_bin_fraction": 0.39686107635498047,
+    "first_order_mean": 0.01918920468520014,
+    "first_order_sum": 5.353788107170839,
+    "homogeneity_original": 0.6436024853279934,
+    "homogeneity_shuffled_mean": 0.5803545289248839,
+    "delta_h": 9.827177154369897,
+    "mean_variant": 9.846366359055096,
+    "sum_variant": 15.180965261540736
+  },
+  "seconds": 38.28610069999996
+}

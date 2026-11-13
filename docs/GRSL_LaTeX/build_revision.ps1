@@ -27,7 +27,12 @@ try {
     }
     foreach ($document in $documents) {
         $compiledFile = Join-Path $buildDir "$document.pdf"
-        $finalFile = Join-Path $paperDir "$document.pdf"
+        $finalName = if ($document -eq 'GRSL-02805-2026_Revised_Clean') {
+            'GRSL_paper_revised.pdf'
+        } else {
+            "$document.pdf"
+        }
+        $finalFile = Join-Path $paperDir $finalName
         try {
             Copy-Item -LiteralPath $compiledFile -Destination $finalFile -Force
         } catch {

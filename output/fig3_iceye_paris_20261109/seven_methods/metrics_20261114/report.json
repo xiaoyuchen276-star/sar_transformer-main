@@ -1,0 +1,434 @@
+{
+  "created_at": "2026-11-14T02:54:22.695284+08:00",
+  "numerical_validation": {
+    "welford_direct_window_max_relative_variance_error": 4.1342283975534224e-16,
+    "homogeneity_rearrangement_absolute_error": 4.996003610813204e-16
+  },
+  "rgpi_cache_all_source_hashes_match": true,
+  "script_sha256": "97503dd95d314a7f808a7101983dbf34914cccbeebe3989831dab8ca38148ff5",
+  "classic_metric_sha256": "ab40589a5809c52089e5588da6b2c77071a469adf45078d81ca6b49dbae5bc9e",
+  "scopes": {
+    "ENL": "fixed 384x384 homogeneous H, sample variance ddof=1",
+    "M": "whole crop; all valid 25x25 sliding windows with stride 1",
+    "EPI": "whole crop; lower-right diagonal absolute-difference sum ratio",
+    "RGPI": "whole crop excluding outer 3-pixel border, cached formula implementation"
+  },
+  "M_primary_convention": "Gomez 2017 Eq.(1),(3): first_order_sum + delta_h; no division by selected-window count",
+  "M_legacy_convention": "mean_variant is retained only as the project prior first_order_mean + delta_h implementation",
+  "M_numerics": "separable Welford population variance; algebraically equivalent local-GLCM averaging; no ratio denominator flooring",
+  "M_source": "https://www.mdpi.com/2072-4292/9/4/389",
+  "comparison_notes": [
+    "MERLIN uses projected SLC and its input-derived effective L; it is a separate input protocol.",
+    "SDUDNet uses an 8-bit display input and inverse display mapping.",
+    "Extreme ratios collapse 8-bin global quantization for several methods; M is not a sufficient standalone quality rank.",
+    "These are one-crop measurements, not multi-scene benchmark means."
+  ],
+  "results": [
+    {
+      "method": "Noisy",
+      "key": "noisy",
+      "input_product": "GRD",
+      "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "output_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "ENL_H": 4.367313742898537,
+      "EPI_Whole": 1.0,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": false,
+        "reason": "identity ratio is constant; M-index not defined",
+        "mean_variant": null,
+        "sum_variant": null
+      },
+      "seconds": 0.460885200000007,
+      "M_index": null,
+      "RGPI_Whole": 0.09684565086238604,
+      "RGPI_L": 5.0
+    },
+    {
+      "method": "SAR-BM3D",
+      "key": "sarbm3d",
+      "input_product": "GRD",
+      "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "output_sha256": "8abbb9d5fbb8a7432029aff655268f9b24e07aa1b25f37fa0f26bdf33bd73f1e",
+      "ENL_H": 9.331906532550722,
+      "EPI_Whole": 0.8076385516687106,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": false,
+        "reason": "no_window_satisfies_3_percent_tolerances",
+        "window": 25,
+        "tolerance": 0.03,
+        "levels": 8,
+        "shuffles": 100,
+        "seed": 42,
+        "selected_windows": 0,
+        "total_windows": 9290304,
+        "ratio_floor_pixels": 0,
+        "ratio_min": 0.02618214599507053,
+        "ratio_max": 6.206733389882168,
+        "quantization_bin_counts": [
+          2131063,
+          7259737,
+          46110,
+          154,
+          63,
+          25,
+          18,
+          14
+        ],
+        "largest_bin_fraction": 0.7692694134182401,
+        "first_order_mean": null,
+        "first_order_sum": null,
+        "delta_h": null,
+        "mean_variant": null,
+        "sum_variant": null
+      },
+      "seconds": 8.972356100000013,
+      "M_index": null,
+      "RGPI_Whole": 0.0808569962380545,
+      "RGPI_L": 5.0
+    },
+    {
+      "method": "SAR2SAR",
+      "key": "sar2sar",
+      "input_product": "GRD",
+      "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "output_sha256": "7fe5ebd97ec66fa064c57c594f6a5b8a138c02a17e34dd997931a5a7886b86ce",
+      "ENL_H": 1.6417117008424216,
+      "EPI_Whole": 0.5928794879175854,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": true,
+        "reason": "",
+        "window": 25,
+        "tolerance": 0.03,
+        "levels": 8,
+        "shuffles": 100,
+        "seed": 42,
+        "selected_windows": 12,
+        "total_windows": 9290304,
+        "ratio_floor_pixels": 0,
+        "ratio_min": 0.0003105202999861708,
+        "ratio_max": 813320.6322290975,
+        "quantization_bin_counts": [
+          9385504,
+          44931,
+          5917,
+          689,
+          116,
+          19,
+          6,
+          2
+        ],
+        "largest_bin_fraction": 0.9945237901475694,
+        "first_order_mean": 0.012448363042336638,
+        "first_order_sum": 0.14938035650803966,
+        "homogeneity_original": 0.997259242427513,
+        "homogeneity_shuffled_mean": 0.9941048589295266,
+        "delta_h": 0.31630526585123503,
+        "mean_variant": 0.3287536288935717,
+        "sum_variant": 0.4656856223592747
+      },
+      "seconds": 43.67578359999999,
+      "M_index": 0.4656856223592747,
+      "RGPI_Whole": -2.8125880707034665,
+      "RGPI_L": 5.0
+    },
+    {
+      "method": "SDUDNet",
+      "key": "sdudnet",
+      "input_product": "GRD",
+      "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "output_sha256": "7cab7f940cfc2a9ab809121d029150bd59fdd3523a243fceb64c69c291cd5823",
+      "ENL_H": 4.382454510579907,
+      "EPI_Whole": 0.40299315755446496,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": false,
+        "reason": "no_window_satisfies_3_percent_tolerances",
+        "window": 25,
+        "tolerance": 0.03,
+        "levels": 8,
+        "shuffles": 100,
+        "seed": 42,
+        "selected_windows": 0,
+        "total_windows": 9290304,
+        "ratio_floor_pixels": 0,
+        "ratio_min": 0.018353534116661567,
+        "ratio_max": 3217.826416015625,
+        "quantization_bin_counts": [
+          9437122,
+          28,
+          16,
+          8,
+          6,
+          0,
+          0,
+          4
+        ],
+        "largest_bin_fraction": 0.9999934302435981,
+        "first_order_mean": null,
+        "first_order_sum": null,
+        "delta_h": null,
+        "mean_variant": null,
+        "sum_variant": null
+      },
+      "seconds": 7.305171800000039,
+      "M_index": null,
+      "RGPI_Whole": -0.10630557685722951,
+      "RGPI_L": 5.0
+    },
+    {
+      "method": "Trans-SAR",
+      "key": "transsar",
+      "input_product": "GRD",
+      "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "output_sha256": "a13203451b7d5f8c5594f606444c319ee573526b64990c04ee58fec65dae232a",
+      "ENL_H": 107.21119338337525,
+      "EPI_Whole": 0.25543004686255827,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": false,
+        "reason": "no_window_satisfies_3_percent_tolerances",
+        "window": 25,
+        "tolerance": 0.03,
+        "levels": 8,
+        "shuffles": 100,
+        "seed": 42,
+        "selected_windows": 0,
+        "total_windows": 9290304,
+        "ratio_floor_pixels": 0,
+        "ratio_min": 0.006061675106183854,
+        "ratio_max": 21.90831995203721,
+        "quantization_bin_counts": [
+          9394284,
+          34057,
+          6082,
+          1901,
+          650,
+          178,
+          28,
+          4
+        ],
+        "largest_bin_fraction": 0.9954541524251302,
+        "first_order_mean": null,
+        "first_order_sum": null,
+        "delta_h": null,
+        "mean_variant": null,
+        "sum_variant": null
+      },
+      "seconds": 6.794514200000037,
+      "M_index": null,
+      "RGPI_Whole": -0.8099356998743962,
+      "RGPI_L": 5.0
+    },
+    {
+      "method": "CL-SAR",
+      "key": "cl_sar",
+      "input_product": "GRD",
+      "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "output_sha256": "fff876d9cb4a1899e58a1c38b4db7247a0dfeb06a2f59602fbea56a3f995d54a",
+      "ENL_H": 45.0167838435934,
+      "EPI_Whole": 0.821833956820185,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": true,
+        "reason": "",
+        "window": 25,
+        "tolerance": 0.03,
+        "levels": 8,
+        "shuffles": 100,
+        "seed": 42,
+        "selected_windows": 180378,
+        "total_windows": 9290304,
+        "ratio_floor_pixels": 0,
+        "ratio_min": 0.001533085234054586,
+        "ratio_max": 5283562.423912266,
+        "quantization_bin_counts": [
+          9437152,
+          19,
+          2,
+          3,
+          3,
+          0,
+          3,
+          2
+        ],
+        "largest_bin_fraction": 0.9999966091579862,
+        "first_order_mean": 0.015592317225007507,
+        "first_order_sum": 2812.510996412404,
+        "homogeneity_original": 0.9999964218023738,
+        "homogeneity_shuffled_mean": 0.9999954553818509,
+        "delta_h": 9.664239809969309e-05,
+        "mean_variant": 0.0156889596231072,
+        "sum_variant": 2812.511093054802
+      },
+      "seconds": 39.666340599999955,
+      "M_index": 2812.511093054802,
+      "RGPI_Whole": -0.165544569050608,
+      "RGPI_L": 5.0
+    },
+    {
+      "method": "MERLIN",
+      "key": "merlin",
+      "input_product": "projected_SLC",
+      "input_sha256": "fd434836601f523d0489c9d41e98ed765caf3d8da6a99101ead096bb8cc1e1c6",
+      "output_sha256": "18e42ad35a55e801c1619769ebcfb5a68ceb38d0113ed158adba290a8bd4f855",
+      "ENL_H": 11.716687810229383,
+      "EPI_Whole": 0.5948380074244252,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": false,
+        "reason": "no_window_satisfies_3_percent_tolerances",
+        "window": 25,
+        "tolerance": 0.03,
+        "levels": 8,
+        "shuffles": 100,
+        "seed": 42,
+        "selected_windows": 0,
+        "total_windows": 9290304,
+        "ratio_floor_pixels": 0,
+        "ratio_min": 0.09401066136262111,
+        "ratio_max": 22.500885731212236,
+        "quantization_bin_counts": [
+          9434953,
+          1954,
+          207,
+          53,
+          9,
+          2,
+          3,
+          3
+        ],
+        "largest_bin_fraction": 0.9997635947333442,
+        "first_order_mean": null,
+        "first_order_sum": null,
+        "delta_h": null,
+        "mean_variant": null,
+        "sum_variant": null
+      },
+      "seconds": 6.475769000000014,
+      "M_index": null,
+      "RGPI_Whole": -0.0121619650357932,
+      "RGPI_L": 4.002029450704004
+    },
+    {
+      "method": "MuLoG-DRUNet",
+      "key": "mulog_drunet",
+      "input_product": "GRD",
+      "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+      "output_sha256": "8f9ee36c082768c3c140e09178f0091765c02e1dc55a0909c3e949fd11347341",
+      "ENL_H": 36.814328145854205,
+      "EPI_Whole": 0.5346610543380698,
+      "shape": [
+        3072,
+        3072
+      ],
+      "H_row_col_height_width": [
+        1696,
+        2624,
+        384,
+        384
+      ],
+      "M": {
+        "valid": true,
+        "reason": "",
+        "window": 25,
+        "tolerance": 0.03,
+        "levels": 8,
+        "shuffles": 100,
+        "seed": 42,
+        "selected_windows": 279,
+        "total_windows": 9290304,
+        "ratio_floor_pixels": 0,
+        "ratio_min": 0.012003376766504072,
+        "ratio_max": 3.4856617333390605,
+        "quantization_bin_counts": [
+          497830,
+          3271535,
+          3745251,
+          1601558,
+          293695,
+          26066,
+          1213,
+          36
+        ],
+        "largest_bin_fraction": 0.39686107635498047,
+        "first_order_mean": 0.01918920468520014,
+        "first_order_sum": 5.353788107170839,
+        "homogeneity_original": 0.6436024853279934,
+        "homogeneity_shuffled_mean": 0.5803545289248839,
+        "delta_h": 9.827177154369897,
+        "mean_variant": 9.846366359055096,
+        "sum_variant": 15.180965261540736
+      },
+      "seconds": 38.28610069999996,
+      "M_index": 15.180965261540736,
+      "RGPI_Whole": -0.04499691270173492,
+      "RGPI_L": 5.0
+    }
+  ]
+}

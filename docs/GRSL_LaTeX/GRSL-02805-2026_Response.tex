@@ -42,6 +42,13 @@
 \textbf{Title:} SAR Despeckling via Fourier Refinement and Representation-Consistent Reconstruction\par
 \textbf{Authors:} Hongyu Chen and Peng Liu
 
+\section*{Summary of Revisions}
+We added validation sensitivity results, training and validation learning curves, separate bottleneck and decoder FDR ablations, and model complexity measurements. We also clarified the training--validation--testing protocol, corrected the training settings, and standardized numerical precision. These revisions are marked in blue.
+
+To accommodate these additions within the five-page limit, we shortened the Abstract, the related-work and contribution paragraphs in Section I, method explanations in Section II, protocol and results discussion in Section III, the Conclusion (Section IV), and the comparison captions (Figs. 4 and 5). These passages are marked in green.
+
+The compression removed explicit details on the unbounded compensation correction, the scheduler's patience of four validation events, and equal weighting of classes and looks in validation MSE. It also removed repeated numerical summaries and discussion of simulated and transformed noise assumptions, correlated-speckle bias, cross-method attribution, ROI homogeneity, ablation interactions and capacity, and the scope of visual comparisons. The concluding call for further validation and efficiency analysis was removed; independent acquisitions and uncertainty assessment remain in Section III-H. The experiments, equations, and result tables are retained.
+
 \section*{Reviewer(s) Comments:}
 \subsection*{Reviewer: 1}
 \textbf{Comments to the Author}
@@ -80,13 +87,23 @@
 
 \reviewgroup{the ablation study doesn\textquotesingle{}t isolate the contributions}
 
-\pendingbullet{-bottleneck vs the decoder FDR components need to be added}
+\Needspace{7\baselineskip}
+\textit{-bottleneck vs the decoder FDR components need to be added}
 
-\pendingbullet{-Report the total parameters of FLOPS}
+\textbf{Response:} We have added separate bottleneck and decoder FDR ablations. Removing them reduces PSNR by 1.01 and 1.47~dB, respectively, with the remaining components retained.
+
+\textbf{Location:} Page 4, Section III-E and Table IV.
+
+\Needspace{7\baselineskip}
+\textit{-Report the total parameters of FLOPS}
+
+\textbf{Response:} We now report total parameters and FLOPs for all six variants. The full model has 39.353~M parameters and approximately 27.95~G FLOPs per \(256\times256\) image.
+
+\textbf{Location:} Page 4, Table IV and its note.
 
 \textit{-}
 
-\clearpage
+\Needspace{16\baselineskip}
 \section*{Reviewer: 2}
 \textbf{Comments to the Author}\par
 \textbf{Comments:}
@@ -98,17 +115,23 @@
 
 \textbf{Location:} Page 2, Section II-C; page 3, Section III-B; page 4, Table II.
 
-\pendingnumberedcomment{2)}{In opinion of this reviewer, the authors should provide information about training-validation-testing process. This expert did not find such information in subsect. A. Datasets and Evaluation Protocol. Such information is important for better understanding by a potential reader how works novel framework. Please illustrate the training-validation-testing process using the learning curves allowing the observation of convergence stability and behavior on both training and validation sets throughout the epochs for performance criteria (PSNR, SSIM, etc.) or objective function.}
+\Needspace{10\baselineskip}
+\textit{2) In opinion of this reviewer, the authors should provide information about training-validation-testing process. This expert did not find such information in subsect. A. Datasets and Evaluation Protocol. Such information is important for better understanding by a potential reader how works novel framework. Please illustrate the training-validation-testing process using the learning curves allowing the observation of convergence stability and behavior on both training and validation sets throughout the epochs for performance criteria (PSNR, SSIM, etc.) or objective function.}
 
-\pendingnumberedcomment{3)}{In opinion of this reviewer, all results that are presented in subsects. E. Ablation Study, F. Real-SAR Adaptation, and tables III- IV should be investigated using statistical revision analysis where different variants of analyzed architectures (frameworks) should be compared when confirming a one with better performance. The standard practice in statistical revision of the experiments that can help in selecting the best architecture variant for a designed framework consists of a comparison of the significancy in differences for metrics employing statistical significance testing performed on comparing different architecture products\textasciiacute{} results. The authors should apply statistical significance testing (e.g., paired t-tests, interval estimations, variance differences. etc.). Such analysis should confirm significant differences in criteria for the best architecture variant or parameters\textasciiacute{} values selected. Similar method that uses statistical significance testing of differences for quality criteria (PSNR, SSIM) of designed system against better methods should be employed for results presented in table I.}
+\textbf{Response:} Thank you for the suggestion. We have clarified the data splits, validation after each epoch, checkpoint selection by minimum validation loss, and evaluation on independent test sets. Two new figures show training and validation losses over 50 supervised epochs and eight AMS epochs. The supervised losses decrease rapidly at first and then more gradually; both AMS losses decrease throughout adaptation. The selected checkpoints are epochs 47 and 8, respectively.
+
+\textbf{Location:} Pages 2--3, Sections II-C, III-A, and III-B; page 3, Figs. 2 and 3.
 
 \clearpage
 \section*{Reviewer: 2 (continued)}
+\pendingnumberedcomment{3)}{In opinion of this reviewer, all results that are presented in subsects. E. Ablation Study, F. Real-SAR Adaptation, and tables III- IV should be investigated using statistical revision analysis where different variants of analyzed architectures (frameworks) should be compared when confirming a one with better performance. The standard practice in statistical revision of the experiments that can help in selecting the best architecture variant for a designed framework consists of a comparison of the significancy in differences for metrics employing statistical significance testing performed on comparing different architecture products\textasciiacute{} results. The authors should apply statistical significance testing (e.g., paired t-tests, interval estimations, variance differences. etc.). Such analysis should confirm significant differences in criteria for the best architecture variant or parameters\textasciiacute{} values selected. Similar method that uses statistical significance testing of differences for quality criteria (PSNR, SSIM) of designed system against better methods should be employed for results presented in table I.}
+
+\Needspace{16\baselineskip}
 \textit{4) The authors presented in tables II and III quantitative comparison of performance for different models using quantitative metrics. This reviewer reminds that usage of third sign after point for PSNR values has not any statistical sense from statistical or practical point of view. It is known that 3dB difference is equal to 200\% (1dB is 67\%), so the variance in a value 0.001dB (third sign) equivalent to a change of 0,067\%. Such difference is not significant in comparison PSNR values from statistical or practical point of view. Please use only two signs after point in these tables as well as in discussions connected with dB values for PSNR measures. Such representation of PSNR criterion is common in discussion for filtering or SR reconstruction studies. Also, in opinion of this reviewer, using more than four signs for EPI and M criteria (table V) has no statistical or practical significance.}
 
 \medskip
 \textbf{Response:} Thank you for the suggestion. We have rounded PSNR values in Tables III and IV and the related discussion to two decimal places, and EPI and M-index values in Table VI to four decimal places.
 
-\textbf{Location:} Pages 3--4, Sections III-D and III-E and Tables III and IV; page 5, Table VI.
+\textbf{Location:} Page 4, Sections III-D and III-E and Tables III and IV; page 5, Table VI.
 
 \end{document}

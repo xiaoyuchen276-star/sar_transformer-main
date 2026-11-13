@@ -1,0 +1,52 @@
+{
+  "method": "CL-SAR",
+  "key": "cl_sar",
+  "input_product": "GRD",
+  "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+  "output_sha256": "fff876d9cb4a1899e58a1c38b4db7247a0dfeb06a2f59602fbea56a3f995d54a",
+  "ENL_H": 45.0167838435934,
+  "EPI_Whole": 0.821833956820185,
+  "shape": [
+    3072,
+    3072
+  ],
+  "H_row_col_height_width": [
+    1696,
+    2624,
+    384,
+    384
+  ],
+  "M": {
+    "valid": true,
+    "reason": "",
+    "window": 25,
+    "tolerance": 0.03,
+    "levels": 8,
+    "shuffles": 100,
+    "seed": 42,
+    "selected_windows": 180378,
+    "total_windows": 9290304,
+    "ratio_floor_pixels": 0,
+    "ratio_min": 0.001533085234054586,
+    "ratio_max": 5283562.423912266,
+    "quantization_bin_counts": [
+      9437152,
+      19,
+      2,
+      3,
+      3,
+      0,
+      3,
+      2
+    ],
+    "largest_bin_fraction": 0.9999966091579862,
+    "first_order_mean": 0.015592317225007507,
+    "first_order_sum": 2812.510996412404,
+    "homogeneity_original": 0.9999964218023738,
+    "homogeneity_shuffled_mean": 0.9999954553818509,
+    "delta_h": 9.664239809969309e-05,
+    "mean_variant": 0.0156889596231072,
+    "sum_variant": 2812.511093054802
+  },
+  "seconds": 39.666340599999955
+}

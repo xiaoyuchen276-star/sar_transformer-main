@@ -1,0 +1,26 @@
+{
+  "method": "Noisy",
+  "key": "noisy",
+  "input_product": "GRD",
+  "input_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+  "output_sha256": "f7069262d95d83e7bebeb2deb599409fd3827e385b8e78a57f4b323b77ccdd66",
+  "ENL_H": 4.367313742898537,
+  "EPI_Whole": 1.0,
+  "shape": [
+    3072,
+    3072
+  ],
+  "H_row_col_height_width": [
+    1696,
+    2624,
+    384,
+    384
+  ],
+  "M": {
+    "valid": false,
+    "reason": "identity ratio is constant; M-index not defined",
+    "mean_variant": null,
+    "sum_variant": null
+  },
+  "seconds": 0.460885200000007
+}
