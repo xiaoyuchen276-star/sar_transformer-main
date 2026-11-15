@@ -1,0 +1,86 @@
+[
+  {
+    "region": "H",
+    "method": "SAR-BM3D",
+    "formula_identity": 0.05404279594623855,
+    "formula_filtered": 0.04155241359829779
+  },
+  {
+    "region": "H",
+    "method": "SAR2SAR",
+    "formula_identity": 0.05404279594623855,
+    "formula_filtered": -1.3436971750217142
+  },
+  {
+    "region": "H",
+    "method": "SDUDNet",
+    "formula_identity": 0.05404279594623855,
+    "formula_filtered": 0.05026370298706464
+  },
+  {
+    "region": "H",
+    "method": "Trans-SAR",
+    "formula_identity": 0.05404279594623855,
+    "formula_filtered": -0.18118645407042275
+  },
+  {
+    "region": "H",
+    "method": "CL-SAR",
+    "formula_identity": 0.05404279594623855,
+    "formula_filtered": -0.10489071535931575
+  },
+  {
+    "region": "H",
+    "method": "MERLIN",
+    "formula_identity": 0.024578634075954706,
+    "formula_filtered": 0.011764345647652536
+  },
+  {
+    "region": "H",
+    "method": "MuLoG-DRUNet",
+    "formula_identity": 0.05404279594623855,
+    "formula_filtered": -0.05170019596846685
+  },
+  {
+    "region": "S",
+    "method": "SAR-BM3D",
+    "formula_identity": 0.10339691484011827,
+    "formula_filtered": 0.08613692697381095
+  },
+  {
+    "region": "S",
+    "method": "SAR2SAR",
+    "formula_identity": 0.10339691484011827,
+    "formula_filtered": -2.1395381699428584
+  },
+  {
+    "region": "S",
+    "method": "SDUDNet",
+    "formula_identity": 0.10339691484011827,
+    "formula_filtered": -0.10147098503698301
+  },
+  {
+    "region": "S",
+    "method": "Trans-SAR",
+    "formula_identity": 0.10339691484011827,
+    "formula_filtered": -0.9090653358848889
+  },
+  {
+    "region": "S",
+    "method": "CL-SAR",
+    "formula_identity": 0.10339691484011827,
+    "formula_filtered": -0.1965965673489895
+  },
+  {
+    "region": "S",
+    "method": "MERLIN",
+    "formula_identity": 0.07043755339418778,
+    "formula_filtered": -0.015562076762788106
+  },
+  {
+    "region": "S",
+    "method": "MuLoG-DRUNet",
+    "formula_identity": 0.10339691484011827,
+    "formula_filtered": -0.036309254610417924
+  }
+]

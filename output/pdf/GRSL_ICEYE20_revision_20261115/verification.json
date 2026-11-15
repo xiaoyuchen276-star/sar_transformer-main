@@ -1,0 +1,28 @@
+{
+  "pdfs": {
+    "GRSL_paper_revised.pdf": {
+      "pages": 5,
+      "sha256": "6995f68af47031254321e85eba54d51f8dbc45b2461303c979904a0cb8fd9197"
+    },
+    "GRSL-02805-2026_Revised_Marked.pdf": {
+      "pages": 5,
+      "sha256": "88dbc524c9b8dabe6152fe38c99ccd25b57def48c044f66273b30ec530178510"
+    },
+    "GRSL-02805-2026_Response.pdf": {
+      "pages": 5,
+      "sha256": "6aa3bbc5a8aae8a9c5596192be5adf0adf30ffd0df4c7c1fc93a393c177f015a"
+    }
+  },
+  "other_four_tables_unchanged": true,
+  "original_eight_equations_unchanged": true,
+  "reviewer_bullet_text_preserved": true,
+  "figures_replaced": false,
+  "remote_metrics_recomputed": false,
+  "remaining": [
+    "ICEYE image and ratio comparisons deferred by author",
+    "Parent-level uncertainty requires remote per-scene results",
+    "ENL reported by author differs from local frozen-ROI statistics; remote records required"
+  ],
+  "visual_review": "All five clean and marked pages reviewed; response pages reviewed, isolated Location line corrected.",
+  "source_results_sha256": "ea07806a32c4d41f121b9f66c9c16703c088024f8b82dce2c3b5faa874923de7"
+}

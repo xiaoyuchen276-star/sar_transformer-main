@@ -103,13 +103,27 @@ RGPI 使用 float64、gammaln 和 logaddexp 计算自然对数密度，未对概
 
 重建：在仓库根目录执行 `python scripts/iceye_paris/evaluate_rgpi.py`。验证：`python -m unittest discover -s scripts/iceye_paris -p test_rgpi_metric.py -v`。
 
+### RGPI 下降复核（2026-11-14）
+
+已核验原记录的全部 13 项文件校验和，并从科学数组重新计算七种方法的全图 RGPI，结果与原记录一致。另用直接 3×3 卷积求和独立计算下降量，与两次 RGPI 相减的最大差异为 1.48×10⁻¹²；原有六项测试全部通过。
+
+下降符合公式性质：固定观测、视数、输入权重和有效位置后，设 Q、q 分别为观测与输出的局部均值比，α=9L，则 `RGPI(Y,Y) − RGPI(Y,X̂) = mean[2αW log cosh(0.5 log(q/Q))] ≥ 0`。因此 Noisy 的恒等比较是该条件似然的上限，不是去斑性能基准；“↑”表示同一输入及参数下的局部梯度保持方向，不表示去噪后必须超过 Noisy。全局正增益不改变局部均值比。RGPI 是对数密度的加权均值，负值本身不表示计算错误。
+
+GRD 的恒等参考为 0.0968456509；MERLIN 对应投影 SLC 的恒等参考为 0.0631781142。二者输入和视数不同，不直接排名。下表 Noisy 的 RGPI 不参与方法排名，原始参考数值仍保留在测量 JSON/CSV 中。
+
+本次另在 H、S 内各取固定 128×128 原始强度块，运行作者 MATLAB 程序：H 区 Noisy 为 0.3485575194、SAR-BM3D 为 0.2636266314，同样下降。其他方法也低于各自恒等参考；SAR2SAR 在两块区域的作者程序输出均为 −Inf。作者程序与显式公式的绝对数值差异仍未解决，因此现有结果明确称为“论文公式实现值”，不称为作者程序复现结果，也不混用两套数值。
+
+- [全图复算与独立下降量核验](seven_methods/rgpi/audit_20261114/recheck.json)
+- [作者程序的 H/S 小块实测](seven_methods/rgpi/audit_20261114/author_probe.json) / [同样小块的公式实现结果](seven_methods/rgpi/audit_20261114/formula_probe.json)
+- 复核脚本：`scripts/iceye_paris/audit_rgpi.py`、`scripts/iceye_paris/audit_rgpi_author.m`。小块实验用于诊断，不替代全图测量。
+
 ## 单景四指标测量（2026-11-14）
 
 以下使用已保存的 3072 × 3072 浮点强度结果。ENL 在固定 H 区计算（裁剪内行 1696、列 2624，384 × 384，样本方差 ddof=1）。EPI、M-index 和 RGPI 使用全裁剪；RGPI 排除外侧 3 像素边界。未使用展示亮度匹配，也未对比率分母设置生效的截断。
 
-| 方法 | ENL（H） | M-index（求和式） | EPI（全图） | RGPI（全图） |
+| 方法 | ENL（H） | M-index（求和式） | EPI（全图） | RGPI（公式版，全图）↑ |
 |---|---:|---:|---:|---:|
-| Noisy | 4.37 | — | 1.0000 | 0.0968 |
+| Noisy | 4.37 | — | 1.0000 | —（恒等参考 0.0968） |
 | SAR-BM3D | 9.33 | N/A | 0.8076 | 0.0809 |
 | SAR2SAR | 1.64 | 0.4657 | 0.5929 | -2.8126 |
 | SDUDNet* | 4.38 | N/A | 0.4030 | -0.1063 |

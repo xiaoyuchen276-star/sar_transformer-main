@@ -1,0 +1,156 @@
+[
+  {
+    "region": "H",
+    "method": "SAR-BM3D",
+    "looks": 5,
+    "author_identity": 0.34855751941628488,
+    "author_filtered": 0.26362663141764908,
+    "author_filtered_text": "0.26362663141764908",
+    "filtered_is_finite": true,
+    "drop": 0.0849308879986358,
+    "seconds": 0.43056
+  },
+  {
+    "region": "H",
+    "method": "SAR2SAR",
+    "looks": 5,
+    "author_identity": 0.34855751941628488,
+    "author_filtered": null,
+    "author_filtered_text": "-Inf",
+    "filtered_is_finite": false,
+    "drop": null,
+    "seconds": 0.4142122
+  },
+  {
+    "region": "H",
+    "method": "SDUDNet",
+    "looks": 5,
+    "author_identity": 0.34855751941628488,
+    "author_filtered": 0.32887431147981144,
+    "author_filtered_text": "0.32887431147981144",
+    "filtered_is_finite": true,
+    "drop": 0.019683207936473435,
+    "seconds": 0.4473454
+  },
+  {
+    "region": "H",
+    "method": "Trans-SAR",
+    "looks": 5,
+    "author_identity": 0.34855751941628488,
+    "author_filtered": -1.1256291726628036,
+    "author_filtered_text": "-1.1256291726628036",
+    "filtered_is_finite": true,
+    "drop": 1.4741866920790885,
+    "seconds": 0.396966
+  },
+  {
+    "region": "H",
+    "method": "CL-SAR",
+    "looks": 5,
+    "author_identity": 0.34855751941628488,
+    "author_filtered": -0.81475445808839364,
+    "author_filtered_text": "-0.81475445808839364",
+    "filtered_is_finite": true,
+    "drop": 1.1633119775046785,
+    "seconds": 0.4116259
+  },
+  {
+    "region": "H",
+    "method": "MERLIN",
+    "looks": 4.0020294507040042,
+    "author_identity": 0.22560039285924724,
+    "author_filtered": 0.10388656595072071,
+    "author_filtered_text": "0.10388656595072071",
+    "filtered_is_finite": true,
+    "drop": 0.12171382690852653,
+    "seconds": 0.4076394
+  },
+  {
+    "region": "H",
+    "method": "MuLoG-DRUNet",
+    "looks": 5,
+    "author_identity": 0.34855751941628488,
+    "author_filtered": -0.43405189874816758,
+    "author_filtered_text": "-0.43405189874816758",
+    "filtered_is_finite": true,
+    "drop": 0.78260941816445251,
+    "seconds": 0.4271749
+  },
+  {
+    "region": "S",
+    "method": "SAR-BM3D",
+    "looks": 5,
+    "author_identity": 0.34453634049288495,
+    "author_filtered": 0.26157733181881343,
+    "author_filtered_text": "0.26157733181881343",
+    "filtered_is_finite": true,
+    "drop": 0.082959008674071522,
+    "seconds": 0.4121798
+  },
+  {
+    "region": "S",
+    "method": "SAR2SAR",
+    "looks": 5,
+    "author_identity": 0.34453634049288495,
+    "author_filtered": null,
+    "author_filtered_text": "-Inf",
+    "filtered_is_finite": false,
+    "drop": null,
+    "seconds": 0.4123171
+  },
+  {
+    "region": "S",
+    "method": "SDUDNet",
+    "looks": 5,
+    "author_identity": 0.34453634049288495,
+    "author_filtered": 0.04520105593984728,
+    "author_filtered_text": "0.04520105593984728",
+    "filtered_is_finite": true,
+    "drop": 0.29933528455303765,
+    "seconds": 0.419542
+  },
+  {
+    "region": "S",
+    "method": "Trans-SAR",
+    "looks": 5,
+    "author_identity": 0.34453634049288495,
+    "author_filtered": -2.0542536297481053,
+    "author_filtered_text": "-2.0542536297481053",
+    "filtered_is_finite": true,
+    "drop": 2.3987899702409905,
+    "seconds": 0.4029487
+  },
+  {
+    "region": "S",
+    "method": "CL-SAR",
+    "looks": 5,
+    "author_identity": 0.34453634049288495,
+    "author_filtered": -1.0261941993596382,
+    "author_filtered_text": "-1.0261941993596382",
+    "filtered_is_finite": true,
+    "drop": 1.3707305398525231,
+    "seconds": 0.4321166
+  },
+  {
+    "region": "S",
+    "method": "MERLIN",
+    "looks": 4.0020294507040042,
+    "author_identity": 0.24593276713516013,
+    "author_filtered": 0.031634244689757021,
+    "author_filtered_text": "0.031634244689757021",
+    "filtered_is_finite": true,
+    "drop": 0.21429852244540309,
+    "seconds": 0.4030179
+  },
+  {
+    "region": "S",
+    "method": "MuLoG-DRUNet",
+    "looks": 5,
+    "author_identity": 0.34453634049288495,
+    "author_filtered": -0.38680596420034213,
+    "author_filtered_text": "-0.38680596420034213",
+    "filtered_is_finite": true,
+    "drop": 0.731342304693227,
+    "seconds": 0.4110538
+  }
+]

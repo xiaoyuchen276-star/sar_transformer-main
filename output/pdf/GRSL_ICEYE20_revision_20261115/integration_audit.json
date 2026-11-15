@@ -1,0 +1,35 @@
+{
+  "source": "author_results_received.md",
+  "averages_computed_from_displayed_category_means": {
+    "Noisy": [
+      "21.02",
+      null,
+      "1.0000",
+      "0.3977"
+    ],
+    "Ours-base": [
+      "192.04",
+      "2.6092",
+      "0.4445",
+      "0.1799"
+    ],
+    "Ours+AMS": [
+      "39.24",
+      "1.4327",
+      "0.7042",
+      "0.3849"
+    ]
+  },
+  "numbers_not_independently_recomputed": true,
+  "open_checks": [
+    "Remote ENL input/ROI definition differs from local fixed protocol",
+    "Remote RGPI implementation required: reported scores incompatible with local fixed-weight formula",
+    "Full images and ratio images missing",
+    "Per-scene metrics required for variability/uncertainty"
+  ],
+  "table_numbering": {
+    "original_IV": "current_V, tab:real",
+    "original_V": "current_VI, tab:real_scenes"
+  },
+  "table_II_and_all_other_tables": "preserve"
+}

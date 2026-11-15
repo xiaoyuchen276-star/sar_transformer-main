@@ -79,6 +79,8 @@ venv/
 /.venv-merlin/
 /.venv-ours-legacy/
 /.venv-umbra-stack/
+/.venv-iceye20/
+/output/iceye20/
 
 # Browser automation caches and local manuscript review workspaces
 /.playwright-cli/

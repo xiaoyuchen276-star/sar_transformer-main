@@ -1,9 +1,10 @@
 # 数据集统一目录
 
-所有数据集实际存放在 `D:\research\sar_transformer-main\datasets`。每个数据集保持独立，原文件名、训练/验证/测试划分及 manifest 均保持原样。
+数据集入口统一放在 `D:\research\sar_transformer-main\datasets`。ICEYE20 的 78.09 GB 原始影像因 D 盘空间不足存放在 `E:\SAR_datasets\iceye20\raw`，路径记录在 `iceye20/manifest.json`；其元数据、裁剪数组和预览仍在本目录。其余数据集实际存放在本目录，各数据集的既有划分及 manifest 保持原样。
 
 | 子目录 | 用途 |
 | --- | --- |
+| `iceye20` | TABLE IV 的 20 景 ICEYE 完整 SLC 外部测试入口；TABLE V 的 H/S/T 各 20 个 256×256 区域，均值统计；TABLE II 不变 |
 | `NWPU-RESISC45` | NWPU 原始光学影像，合成数据来源 |
 | `NWPU_RESISC45_SAR_global_L_v2` | 当前主实验数据，使用经过修正的全局 L 划分 |
 | `NWPU_RESISC45_SAR_intensity_v1` | 区域混合 L 合成数据，用于鲁棒性消融 |
