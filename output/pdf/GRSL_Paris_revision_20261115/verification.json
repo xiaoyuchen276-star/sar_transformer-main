@@ -1,0 +1,25 @@
+{
+  "deliverables": [
+    {
+      "file": "docs/GRSL_LaTeX/GRSL_paper_revised.pdf",
+      "pages": 5,
+      "sha256": "20da52e94f265138f69b8c48a8d2637bd4009fde319a76864804a8b50b17bb3f"
+    },
+    {
+      "file": "docs/GRSL_LaTeX/GRSL-02805-2026_Revised_Marked.pdf",
+      "pages": 5,
+      "sha256": "922732c17af509209bba840a954f24d9f6bd3ef4d41bde6b90f50bf6da8f3f2d"
+    },
+    {
+      "file": "docs/GRSL_LaTeX/GRSL-02805-2026_Response.pdf",
+      "pages": 5,
+      "sha256": "41452dee2ba59e90b6fb1ea649d27f247b9469ce99a5d3ab38f2a510a4b7b2c7"
+    }
+  ],
+  "reviewer_comments_preserved": true,
+  "all_six_tables_preserved": true,
+  "figure_number": 5,
+  "original_figure_number": 3,
+  "visual_review": "All clean and response pages reviewed; marked contact sheet checked; no clipping or overlap.",
+  "panel_f_label": "Ours-base"
+}

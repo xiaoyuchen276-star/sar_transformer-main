@@ -1,0 +1,22 @@
+{
+  "rounded_mean_SD_pairs": 52,
+  "other_manuscript_content_unchanged": true,
+  "p_values_unchanged": true,
+  "CI_unchanged": true,
+  "author_MD_values_retained": true,
+  "visual_review_changed_pages_passed": true,
+  "outputs": {
+    "GRSL_paper_revised": {
+      "pages": 5,
+      "sha256": "efff9a676e973fe65cf345ce90dc2763b791e925abd956f0c760015e25ae4a8d"
+    },
+    "GRSL-02805-2026_Revised_Marked": {
+      "pages": 5,
+      "sha256": "20ccc97a80487a8cd79f70d97a95c50c1a26cf6d908816e844b2dcee59a8f04a"
+    },
+    "GRSL-02805-2026_Response": {
+      "pages": 5,
+      "sha256": "5bacf92feada619c9278cea7daad7c167891e0723813eb34d3fa548d194481e4"
+    }
+  }
+}

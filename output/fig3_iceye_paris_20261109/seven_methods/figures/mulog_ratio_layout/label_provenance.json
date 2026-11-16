@@ -1,0 +1,58 @@
+{
+  "note": "Author corrected the historical filenames and run-record attribution on 2026-11-15; current panel labels govern manuscript attribution.",
+  "author_statement": "\u65e7\u7684\u6587\u4ef6\u540d\u548c\u8fd0\u884c\u8bb0\u5f55\u6807\u9519\u4e86\uff0c\u4ee5\u73b0\u5728\u7684\u6807\u6ce8\u4e3a\u51c6",
+  "panels": [
+    {
+      "panel": "a",
+      "display_label": "Noisy",
+      "source_image": "panels/a_noisy.png"
+    },
+    {
+      "panel": "b",
+      "display_label": "SAR-BM3D",
+      "source_image": "panels/b_sar-bm3d.png"
+    },
+    {
+      "panel": "c",
+      "display_label": "SAR2SAR",
+      "source_image": "panels/c_sar2sar.png"
+    },
+    {
+      "panel": "d",
+      "display_label": "SDUDNet*",
+      "source_image": "panels/d_sdudnet.png"
+    },
+    {
+      "panel": "e",
+      "display_label": "Trans-SAR",
+      "source_image": "panels/f_cl-sar.png"
+    },
+    {
+      "panel": "f",
+      "display_label": "Ours-base",
+      "source_image": "panels/e_trans-sar.png"
+    },
+    {
+      "panel": "g",
+      "display_label": "Ours+AMS",
+      "source_image": "panels/h_mulog-drunet.png"
+    },
+    {
+      "panel": "h",
+      "display_label": "Ours+AMS ratio",
+      "source_image": "ratios/h_mulog-drunet_ratio.png"
+    }
+  ],
+  "historical_source_labels": {
+    "e": "CL-SAR",
+    "f": "Trans-SAR",
+    "g": "MuLoG-DRUNet",
+    "h": "MuLoG-DRUNet ratio"
+  },
+  "author_corrected_labels": {
+    "e": "Trans-SAR",
+    "f": "Ours-base",
+    "g": "Ours+AMS",
+    "h": "Ours+AMS ratio"
+  }
+}

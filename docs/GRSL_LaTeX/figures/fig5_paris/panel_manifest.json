@@ -1,0 +1,170 @@
+{
+  "author_correction_date": "2026-11-15",
+  "author_statement": "旧的文件名和运行记录标错了，以现在的标注为准",
+  "attribution_basis": "Author correction in this chat; historical source filenames and run records retained for file lineage.",
+  "panels": [
+    {
+      "panel": "a",
+      "label": "Noisy",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/panels/a_noisy.png",
+      "output": "a_noisy.png",
+      "source_sha256": "3822a2640f4df1b184e5e74442c1a9eb64043230e444a3b35ff3494d1ecd6064",
+      "output_sha256": "25df0308087043397ac5b53db67bae92040ec54f062c7358e7e67f81084ccb44",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "panel": "b",
+      "label": "SAR-BM3D",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/panels/b_sar-bm3d.png",
+      "output": "b_sar-bm3d.png",
+      "source_sha256": "af276ba0fcd5e762488332d452fc1f9140c1802ef2b68b6b4edc80148503cfd5",
+      "output_sha256": "21afbe385249d593c90497b371d257942335ff9bcff886e7e334843978bdc6ab",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "panel": "c",
+      "label": "SAR2SAR",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/panels/c_sar2sar.png",
+      "output": "c_sar2sar.png",
+      "source_sha256": "7939f3e348ba206dd7213f2f8b90794882479b6b6f9b5d52a1a8ee47eead750e",
+      "output_sha256": "e8307d46fa6eeefca4fce86e7ceb68abb514b833b0e83e59fae97d98fd0c459b",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "panel": "d",
+      "label": "SDUDNet",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/panels/d_sdudnet.png",
+      "output": "d_sdudnet.png",
+      "source_sha256": "7cf1cf48ad08537ff9077cee687c8990489756b915af645b3089b6a4470e8b88",
+      "output_sha256": "9d502844d12aeb43831e71c9c7062a6256c54f9eebcc7f5048408211c147ba0a",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "panel": "e",
+      "label": "Trans-SAR",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/panels/f_cl-sar.png",
+      "output": "e_trans-sar.png",
+      "source_sha256": "c88f79d65dbbda916e1f2766192703660bf7c18c74b164b8a7b385721b4bbca8",
+      "output_sha256": "c6973cf97bef69f7301c0e4447031b3972c94893ebcc9a16103e441b6bff093d",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "panel": "f",
+      "label": "Ours-base",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/panels/e_trans-sar.png",
+      "output": "f_ours-bas.png",
+      "source_sha256": "ffb5043941b36628b69488a5543887da8069006c27b2755e60e621fe86daf5a6",
+      "output_sha256": "1209448c9f3baa2a0dbb784f03b77cb785ff7d032d5c63d9e2f1e6e90e5be600",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "panel": "g",
+      "label": "Ours+AMS",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/panels/h_mulog-drunet.png",
+      "output": "g_ours-ams.png",
+      "source_sha256": "5a162dfcde712e1241e302abd75799ab9c9c31539ea1ccdd1bf0190a9fc3f7b0",
+      "output_sha256": "568e44f902c98153846e2bf29d88c7a395a224fb4d17a8dd98b05e2333d9b138",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "panel": "h",
+      "label": "Ours+AMS ratio",
+      "source": "output/fig3_iceye_paris_20261109/seven_methods/figures/ratios/h_mulog-drunet_ratio.png",
+      "output": "h_ours-ams-ratio.png",
+      "source_sha256": "706588585497fe291dfba7f311da5fa514038a5266fcafc75e1ce879be3b5c47",
+      "output_sha256": "38d19841e565137bfbee3f68b5843a353776ddadf8babc9307b6449b15e71b83",
+      "rendered_pixels": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "display": {
+    "a-g_intensity_db": [
+      -18,
+      0
+    ],
+    "h_ratio_db": [
+      -5,
+      5
+    ],
+    "ratio": "10 log10(Y / Xhat)"
+  },
+  "scene": "ICEYE-X56 Paris Le Bourget GRD, 2025-10-28",
+  "crop_pixels": [
+    3072,
+    3072
+  ],
+  "rois": {
+    "H": {
+      "col_start": 2624,
+      "row_start": 1696,
+      "width": 384,
+      "height": 384,
+      "description": "Relatively homogeneous field interior",
+      "parent_col_start": 5952,
+      "parent_row_start": 2208,
+      "sigma0_mean": 0.0922163799858298,
+      "sigma0_enl_diagnostic": 4.367313742898537,
+      "subblock_mean_cv_4x4": 0.024438635326260717,
+      "subblock_mean_min_max_relative_to_roi_mean": [
+        0.9541075711638515,
+        1.0380361561776161
+      ]
+    },
+    "S": {
+      "col_start": 1200,
+      "row_start": 1424,
+      "width": 384,
+      "height": 384,
+      "description": "Roof edges and corners",
+      "parent_col_start": 4528,
+      "parent_row_start": 1936,
+      "sigma0_mean": 0.4388224570551892,
+      "sigma0_enl_diagnostic": 0.0007943831871990746,
+      "subblock_mean_cv_4x4": 1.8133040405065852,
+      "subblock_mean_min_max_relative_to_roi_mean": [
+        0.11118630546025234,
+        7.390563809022689
+      ]
+    },
+    "T": {
+      "col_start": 320,
+      "row_start": 256,
+      "width": 384,
+      "height": 384,
+      "description": "Dense residential scattering texture",
+      "parent_col_start": 3648,
+      "parent_row_start": 768,
+      "sigma0_mean": 0.2031427115673594,
+      "sigma0_enl_diagnostic": 0.022942576822562365,
+      "subblock_mean_cv_4x4": 1.0059411537403915,
+      "subblock_mean_min_max_relative_to_roi_mean": [
+        0.2831165458417306,
+        4.245675022100473
+      ]
+    }
+  },
+  "rendering": "Full 3072-square view downsampled to 1024-square panels with BOX averaging for manuscript display; original source images retained. No additional intensity stretch."
+}

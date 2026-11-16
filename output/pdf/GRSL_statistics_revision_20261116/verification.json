@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-16",
+  "source": "author-completed MD and four Average SD corrections provided in conversation",
+  "statistical_recomputation_performed": false,
+  "page_counts": {
+    "GRSL_paper_revised.pdf": 5,
+    "GRSL-02805-2026_Revised_Marked.pdf": 5,
+    "GRSL-02805-2026_Response.pdf": 5
+  },
+  "sha256": {
+    "GRSL_paper_revised.pdf": "5aea85d27d27dfb6f3799786d1f7f894091aa05632c3123e0544ce91bc06439f",
+    "GRSL-02805-2026_Revised_Marked.pdf": "b2f4bd4b884fc4f9ff215611ce3836e1abe619dcc085b6cfd5527d55972f14ec",
+    "GRSL-02805-2026_Response.pdf": "c20fe46ece82d5dbf9cd72db83a534b6a211e6675555f3f41cad557d7c94f47c"
+  },
+  "checks": {
+    "numeric_MD_TeX_match": true,
+    "unchanged_equations": 9,
+    "unchanged_tables": [
+      "II",
+      "III"
+    ],
+    "paired_comparison_rows": 7,
+    "scalar_tests": 15,
+    "reviewer_text_and_order_preserved": true,
+    "existing_ablation_reply_preserved": true,
+    "visual_review_all_pages": true,
+    "clean_marked_text_identical": true
+  },
+  "source_MD_sha256": "46e78bf70df925b542387c5f0410dec09421f69d303b2924d8fea373171e5694"
+}
