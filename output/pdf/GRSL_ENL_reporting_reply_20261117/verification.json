@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "page_count": 5,
+  "explanation_pages": [
+    3,
+    5
+  ],
+  "reviewer_comments_preserved": true,
+  "explanation_occurrences": 2,
+  "main_manuscript_files_unchanged": true,
+  "compiler_errors_or_overflow": false,
+  "visual_review": {
+    "all_pages_reviewed": true,
+    "modified_pages": [
+      3,
+      5
+    ],
+    "layout": "no clipping, overlap, or broken paragraphs"
+  },
+  "output_sha256": "78fd2cb731762606ae96537b367fc077ad6bc1846ee439088b789a54a802eab3"
+}

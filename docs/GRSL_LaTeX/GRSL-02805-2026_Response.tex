@@ -65,7 +65,7 @@ We also shortened the Abstract, Sections I--IV, and comparison captions; these e
 \Needspace{9\baselineskip}
 \textit{- Report additional no-reference metrics with explicit definitions and interpretations.}
 
-\textbf{Response:} We added explicit definitions and interpretations of ENL, M-index, EPI, and RGPI. ENL measures ROI smoothness; M-index combines ratio statistics and spatial homogeneity; EPI measures retained diagonal variation. Eq.~(9) defines RGPI through an edge-weighted log conditional density of local ratio gradients.
+\textbf{Response:} We added RGPI to the three existing no-reference metrics (ENL, M-index, and EPI) and provided its explicit definition and interpretation in Eq.~(9) and the accompanying text.
 
 \textbf{Location:} Section III-B, Eq.~(9); Tables V and VI and their notes.
 
@@ -85,14 +85,35 @@ We also shortened the Abstract, Sections I--IV, and comparison captions; these e
 
 \reviewgroup{Simulated speckle model is not sufficient enough for this}
 
-\pendingbullet{-Validate on independent real SAR acquisitions from more than one collection and, if possible, more than one sensor.}
+\Needspace{9\baselineskip}
+\textit{-Validate on independent real SAR acquisitions from more than one collection and, if possible, more than one sensor.}
 
-\pendingbullet{-Explain the effect of clipping on the simulated noise distribution and on the reported metrics.}
+\textbf{Response:} We added external testing on 20 complete ICEYE SLC acquisitions, with adaptation and validation performed on the separate Mendeley collection. All ICEYE scenes are held out from training, validation, and model selection. AMS lowers mean M-index from 2.458 to 1.463 and raises mean EPI from 0.595 to 0.822 across these scenes.
 
-\pendingbullet{-Include experiments with more realistic correlated speckle or justify the intended operational conditions.}
+\textbf{Location:} Sections III-A and III-F; Table V.
 
-\pendingbullet{-Rephrase claims of generalization to match the evidence actually provided.}
+\Needspace{10\baselineskip}
+\textit{-Explain the effect of clipping on the simulated noise distribution and on the reported metrics.}
 
+\textbf{Response:} Equation (1) maps \(XN>1\) to 1, creating a point mass and lowering the conditional mean and variance for fixed \(X>0\). The effective multiplier \(Y/X\) is brightness-dependent and has mean below one. PSNR/SSIM use predictions clipped to \([0,1]\), unchanged clean references, and data range 1. Clipping a noisy observation or a fixed prediction reduces or preserves squared error, so its PSNR increases or stays unchanged; SSIM can increase or decrease as local means, variances, and covariance change.
+
+\textbf{Location:} Sections II-A and II-B, Eqs.~(1) and (6); Section III-B.
+
+\Needspace{10\baselineskip}
+\textit{-Include experiments with more realistic correlated speckle or justify the intended operational conditions.}
+
+\textbf{Response:} The intended real-SAR setting is intensity-image despeckling with noisy images available for adaptation. Independent Gamma speckle at \(L\in\{1,2,4,8\}\) provides controlled noise levels for supervised training and synthetic evaluation. Real-SAR processing uses encoder-frozen masked adaptation on Mendeley data, followed by inference with the fixed model on 20 external ICEYE acquisitions. Quantitative evaluation uses decoded linear intensity on native SLC grids, with inference normalization inverted before measurement.
+
+\textbf{Location:} Sections II-A, II-C, III-A, and III-F; Table V.
+
+\Needspace{9\baselineskip}
+\textit{-Rephrase claims of generalization to match the evidence actually provided.}
+
+\textbf{Response:} We revised the Abstract, Introduction, results discussion, and Conclusion to tie the claims to the evaluated data. Synthetic results describe transfer from NWPU-RESISC45 to UCMerced under simulated speckle; real-SAR conclusions describe M-index/EPI improvements and reduced smoothing on 20 external ICEYE scenes and their homogeneous, structural, and textured regions.
+
+\textbf{Location:} Abstract; Sections I, III-A, III-F--III-G, and IV.
+
+\Needspace{10\baselineskip}
 \reviewgroup{In page no 5 the authors claim that out of 1175 training, 146 validation and 148 test images}
 
 \Needspace{7\baselineskip}
@@ -119,7 +140,7 @@ We also shortened the Abstract, Sections I--IV, and comparison captions; these e
 \Needspace{6\baselineskip}
 \textit{-Report uncertainty estimates and variability across independent parent images.}
 
-\textbf{Response:} Tables V and VI now report mean $\pm$ SD for M-index, EPI, and RGPI across the 20 independent parent scenes. For the Average row in Table VI, H/S/T scores are first averaged within each parent, then the SD is calculated across parents. The mean M-index reduction with AMS is 0.9948 (95\% CI: [0.9657, 1.0239]).
+\textbf{Response:} Tables V and VI now report mean $\pm$ SD for M-index, EPI, and RGPI across the 20 independent parent scenes. For compact presentation, we report only the mean ENL as a descriptor of local smoothing. For the Average row in Table VI, H/S/T scores are first averaged within each parent, then the SD is calculated across parents. The mean M-index reduction with AMS is 0.9948 (95\% CI: [0.9657, 1.0239]).
 
 \textbf{Location:} Page 3, Section III-A; page 4, Sections III-F--III-G and Table V; page 5, Table VI.
 
@@ -161,13 +182,12 @@ We also shortened the Abstract, Sections I--IV, and comparison captions; these e
 \textbf{Location:} Pages 2--3, Sections II-C, III-A, and III-B; page 3, Figs. 2 and 3.
 
 \clearpage
-\section*{Reviewer: 2 (continued)}
 \textit{3) In opinion of this reviewer, all results that are presented in subsects. E. Ablation Study, F. Real-SAR Adaptation, and tables III- IV should be investigated using statistical revision analysis where different variants of analyzed architectures (frameworks) should be compared when confirming a one with better performance. The standard practice in statistical revision of the experiments that can help in selecting the best architecture variant for a designed framework consists of a comparison of the significancy in differences for metrics employing statistical significance testing performed on comparing different architecture products\textasciiacute{} results. The authors should apply statistical significance testing (e.g., paired t-tests, interval estimations, variance differences. etc.). Such analysis should confirm significant differences in criteria for the best architecture variant or parameters\textasciiacute{} values selected. Similar method that uses statistical significance testing of differences for quality criteria (PSNR, SSIM) of designed system against better methods should be employed for results presented in table I.}
 
 \medskip
-\textbf{Response:} We added two-sided paired t-tests with Holm correction across 15 metric comparisons. Synthetic scores are paired across 2,100 source images after averaging the four looks; real-SAR scores are paired across 20 parent scenes. Ours improves macro PSNR/SSIM over Trans-SAR and SAR-BM3D (adjusted $p\leq0.011$). Full outperforms Log-only and the three FDR ablations ($p\leq0.014$), and AMS reduces M-index and increases EPI/RGPI (all $p<0.001$). The p-values appear directly in Tables I, IV, and V, with the M-index reduction interval reported in Section III-F.
+\textbf{Response:} We added two-sided paired t-tests with Holm correction across 15 metric comparisons. Synthetic scores are paired across 2,100 source images after averaging the four looks; real-SAR scores are paired across 20 parent scenes. Ours improves macro PSNR/SSIM over Trans-SAR and SAR-BM3D (adjusted $p\leq0.011$). Full outperforms Log-only and the three FDR ablations ($p\leq0.014$), and AMS reduces M-index and increases EPI/RGPI (all $p<0.001$). The p-values appear directly in Tables I, IV, and V, with the M-index reduction interval reported in Section III-F. For compact presentation, we report only the mean ENL as a descriptor of local smoothing.
 
-\textbf{Location:} Page 3, Sections III-A and III-C and Table I; page 4, Sections III-E--III-F and Tables IV--V (originally III--IV).
+\textbf{Location:} Page 3, Sections III-A and III-C and Table I; page 4, Sections III-E--III-F and Tables IV--V (originally III--IV); page 5, Table VI.
 
 \Needspace{16\baselineskip}
 \textit{4) The authors presented in tables II and III quantitative comparison of performance for different models using quantitative metrics. This reviewer reminds that usage of third sign after point for PSNR values has not any statistical sense from statistical or practical point of view. It is known that 3dB difference is equal to 200\% (1dB is 67\%), so the variance in a value 0.001dB (third sign) equivalent to a change of 0,067\%. Such difference is not significant in comparison PSNR values from statistical or practical point of view. Please use only two signs after point in these tables as well as in discussions connected with dB values for PSNR measures. Such representation of PSNR criterion is common in discussion for filtering or SR reconstruction studies. Also, in opinion of this reviewer, using more than four signs for EPI and M criteria (table V) has no statistical or practical significance.}

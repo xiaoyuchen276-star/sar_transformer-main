@@ -378,12 +378,12 @@ Full w/o all FDR & \rev{26.46} & 0.7612 & \rev{31.608} & \rev{23.97} \\
 \textbf{Method} & \textbf{ENL} & \textbf{M-index}\,$\downarrow$ & \textbf{EPI} & \textbf{RGPI}\,$\uparrow$ \\
 \midrule
 Noisy & 14.37 & -- & \(1.000{\pm}0.000\) & \(0.897{\pm}0.030\) \\
-SAR-BM3D & 29.33 & \(1.746{\pm}0.143\) & \(\underline{0.808}{\pm}0.002\) & \(0.281{\pm}0.021\) \\
+SAR-BM3D & 29.33 & \(1.746{\pm}0.143\) & \(\underline{0.808}{\pm}0.102\) & \(0.281{\pm}0.021\) \\
 SAR2SAR & 11.64 & \(3.453{\pm}0.133\) & \(0.593{\pm}0.021\) & \(\underline{0.706}{\pm}0.028\) \\
-SDUDNet & 14.89 & \(\underline{1.657}{\pm}0.003\) & \(0.403{\pm}0.033\) & \(0.680{\pm}0.018\) \\
-Trans-SAR & 127.21 & \(2.675{\pm}0.008\) & \(0.255{\pm}0.013\) & \(0.166{\pm}0.088\) \\
-Ours-base & 151.77 & \(2.458{\pm}0.059\) & \(0.595{\pm}0.072\) & \(0.548{\pm}0.107\) \\
-Ours+AMS & 36.81 & \(\mathbf{1.463}{\pm}0.013\) & \(\mathbf{0.822}{\pm}0.023\) & \(\mathbf{0.753}{\pm}0.062\) \\
+SDUDNet & 14.89 & \(\underline{1.657}{\pm}0.053\) & \(0.403{\pm}0.033\) & \(0.680{\pm}0.018\) \\
+Trans-SAR & 127.21 & \(2.675{\pm}0.098\) & \(0.255{\pm}0.013\) & \(0.166{\pm}0.038\) \\
+Ours-base & 151.77 & \(2.458{\pm}0.069\) & \(0.595{\pm}0.072\) & \(0.548{\pm}0.107\) \\
+Ours+AMS & 36.81 & \(\mathbf{1.463}{\pm}0.083\) & \(\mathbf{0.822}{\pm}0.053\) & \(\mathbf{0.753}{\pm}0.062\) \\
 \midrule
 \(p\) (AMS/base) & -- & \(<0.001\) & \(<0.001\) & \(<0.001\) \\
 \bottomrule
@@ -392,7 +392,7 @@ Ours+AMS & 36.81 & \(\mathbf{1.463}{\pm}0.013\) & \(\mathbf{0.822}{\pm}0.023\) &
 \parbox{\columnwidth}{\footnotesize\rev{M-index, EPI, RGPI: mean \(\pm\) sample SD across 20 parents; ENL: mean. Noisy is excluded from ranking; its M-index is undefined. Bold/underlined means rank first/second. \(p\): Holm-adjusted paired tests, AMS versus base.}}
 \end{table}
 
-\rev{AMS leads mean M-index, EPI, and RGPI among filtered outputs. Relative to Ours-base, M-index decreases by 0.9948 (95\% CI: [0.9657, 1.0239]), or 40.47\%. All three paired improvements are significant (adjusted \(p<0.001\)); ENL decreases.}
+\rev{AMS leads mean M-index, EPI, and RGPI among filtered outputs. M-index falls from \(2.458\pm0.069\) to \(1.463\pm0.083\), a mean reduction of 0.9948 (95\% CI: [0.9657, 1.0239]), or 40.47\%. EPI rises from \(0.595\pm0.072\) to \(0.822\pm0.053\), and RGPI from \(0.548\pm0.107\) to \(0.753\pm0.062\) (mean \(\pm\) SD). All three paired improvements are significant (adjusted \(p<0.001\)); ENL decreases.}
 
 \rev{Fig.~\ref{fig:real_qual} compares the Paris Le Bourget GRD crop (October 28, 2025). Ours-base (f) broadens bright structures. Ours+AMS (g) reduces fluctuations in H and retains sharper boundaries and scatterers in S/T. Its ratio (h) shows granular residuals with faint scene contours.}
 
@@ -416,7 +416,7 @@ Ours+AMS & 36.81 & \(\mathbf{1.463}{\pm}0.013\) & \(\mathbf{0.822}{\pm}0.023\) &
 \rev{Each of 20 parents contributes three nonoverlapping \(256\times256\) regions: homogeneous (H), structural (S), and textured (T). Input-only screening selects low variation, coherent boundaries, and distributed texture, with coordinates fixed by noisy-input review. Regions are extracted from full predictions. Average first averages H/S/T within each parent, then summarizes the 20 parent averages.}
 
 % Source: author-updated Desktop/实验结果.md, 2026-11-15.
-% Mean and SD: author-confirmed MD, with four Average SD corrections on 2026-11-16.
+% Mean and SD: latest author-updated GRSL_统计补充待填表.md, 2026-11-16.
 \begin{table}[!t]
 \caption{\rev{No-Reference Results by ICEYE Region Type}}
 \label{tab:real_scenes}
@@ -430,30 +430,30 @@ Ours+AMS & 36.81 & \(\mathbf{1.463}{\pm}0.013\) & \(\mathbf{0.822}{\pm}0.023\) &
 \midrule
 \multicolumn{5}{@{}l@{}}{\textit{Homogeneous: 20 regions}} \\
 Noisy & 28.23 & -- & \(1.000{\pm}0.000\) & \(0.287{\pm}0.039\) \\
-Ours-base & 213.34 & \(6.342{\pm}0.039\) & \(0.535{\pm}0.018\) & \(0.120{\pm}0.082\) \\
-Ours+AMS & 46.23 & \(\mathbf{3.452}{\pm}0.013\) & \(\mathbf{0.754}{\pm}0.002\) & \(\mathbf{0.167}{\pm}0.009\) \\
+Ours-base & 213.34 & \(6.342{\pm}0.639\) & \(0.535{\pm}0.078\) & \(0.120{\pm}0.012\) \\
+Ours+AMS & 46.23 & \(\mathbf{3.452}{\pm}0.413\) & \(\mathbf{0.754}{\pm}0.092\) & \(\mathbf{0.167}{\pm}0.009\) \\
 \midrule
 \multicolumn{5}{@{}l@{}}{\textit{Structural: 20 regions}} \\
 Noisy & 21.39 & -- & \(1.000{\pm}0.000\) & \(0.453{\pm}0.113\) \\
-Ours-base & 189.23 & \(1.238{\pm}0.093\) & \(0.439{\pm}0.028\) & \(0.158{\pm}0.020\) \\
-Ours+AMS & 39.66 & \(\mathbf{0.782}{\pm}0.027\) & \(\mathbf{0.647}{\pm}0.011\) & \(\mathbf{0.396}{\pm}0.004\) \\
+Ours-base & 189.23 & \(1.238{\pm}0.093\) & \(0.439{\pm}0.028\) & \(0.158{\pm}0.030\) \\
+Ours+AMS & 39.66 & \(\mathbf{0.782}{\pm}0.027\) & \(\mathbf{0.647}{\pm}0.081\) & \(\mathbf{0.396}{\pm}0.074\) \\
 \midrule
 \multicolumn{5}{@{}l@{}}{\textit{Textured: 20 regions}} \\
 Noisy & 13.43 & -- & \(1.000{\pm}0.000\) & \(0.653{\pm}0.102\) \\
-Ours-base & 173.56 & \(0.248{\pm}0.087\) & \(0.360{\pm}0.076\) & \(0.243{\pm}0.028\) \\
-Ours+AMS & 31.82 & \(\mathbf{0.064}{\pm}0.073\) & \(\mathbf{0.712}{\pm}0.082\) & \(\mathbf{0.491}{\pm}0.008\) \\
+Ours-base & 173.56 & \(0.248{\pm}0.047\) & \(0.360{\pm}0.076\) & \(0.243{\pm}0.028\) \\
+Ours+AMS & 31.82 & \(\mathbf{0.064}{\pm}0.013\) & \(\mathbf{0.712}{\pm}0.082\) & \(\mathbf{0.491}{\pm}0.088\) \\
 \midrule
 \multicolumn{5}{@{}l@{}}{\textit{Average: 60 regions from 20 parents}} \\
 Noisy & 21.02 & -- & \(1.000{\pm}0.000\) & \(0.464{\pm}0.063\) \\
-Ours-base & 192.04 & \(2.609{\pm}0.064\) & \(0.445{\pm}0.021\) & \(0.173{\pm}0.028\) \\
-Ours+AMS & 39.24 & \(\mathbf{1.433}{\pm}0.021\) & \(\mathbf{0.704}{\pm}0.029\) & \(\mathbf{0.352}{\pm}0.005\) \\
+Ours-base & 192.04 & \(2.609{\pm}0.194\) & \(0.445{\pm}0.021\) & \(0.173{\pm}0.013\) \\
+Ours+AMS & 39.24 & \(\mathbf{1.433}{\pm}0.134\) & \(\mathbf{0.704}{\pm}0.029\) & \(\mathbf{0.352}{\pm}0.035\) \\
 \bottomrule
 \end{tabular*}}
 \vspace{1pt}
-\parbox{\columnwidth}{\footnotesize\rev{M-index, EPI, RGPI: mean \(\pm\) SD across 20 parents; Average first averages H/S/T within each parent. ENL: mean. Bold marks the better filtered mean.}}
+\parbox{\columnwidth}{\footnotesize\rev{M-index, EPI, RGPI: mean \(\pm\) sample SD across 20 parents; Average first averages H/S/T within each parent. ENL: mean. Bold marks the better filtered mean.}}
 \end{table}
 
-\rev{AMS lowers mean M-index and raises mean EPI/RGPI in all categories. Its ENL lies between Noisy and Ours-base, consistent with reduced smoothing.}
+\rev{AMS lowers mean M-index and raises mean EPI/RGPI in all categories. Average M-index falls from \(2.609\pm0.194\) to \(1.433\pm0.134\). ENL lies between Noisy and Ours-base, consistent with reduced smoothing.}
 
 \section{Conclusion}
 \condensed{FDR and intensity compensation after log inversion improve Trans-SAR macro PSNR/SSIM, supported by ablations. \rev{Encoder-frozen AMS improves M-index and EPI on 20 external ICEYE scenes and three region types, with less smoothing.}}

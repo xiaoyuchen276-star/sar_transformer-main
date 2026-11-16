@@ -1,0 +1,400 @@
+{
+  "source_md_sha256": "6e0a973ae06a8b9cfb0557e0f6f3f86fecb0fc9cb5518f9748e3a3bff71b5899",
+  "tables": {
+    "V": [
+      {
+        "region": "Whole",
+        "method": "Noisy",
+        "metrics": {
+          "ENL": "14.37",
+          "M-index": "—",
+          "EPI": "1.0000 ± 0.0000",
+          "RGPI": "0.8968 ± 0.0295"
+        }
+      },
+      {
+        "region": "Whole",
+        "method": "SAR-BM3D",
+        "metrics": {
+          "ENL": "29.33",
+          "M-index": "1.7463 ± 0.1433",
+          "EPI": "0.8076 ± 0.1023",
+          "RGPI": "0.2809 ± 0.0209"
+        }
+      },
+      {
+        "region": "Whole",
+        "method": "SAR2SAR",
+        "metrics": {
+          "ENL": "11.64",
+          "M-index": "3.4528 ± 0.1325",
+          "EPI": "0.5929 ± 0.0213",
+          "RGPI": "0.7063 ± 0.0283"
+        }
+      },
+      {
+        "region": "Whole",
+        "method": "SDUDNet",
+        "metrics": {
+          "ENL": "14.89",
+          "M-index": "1.6571 ± 0.0532",
+          "EPI": "0.4030 ± 0.0329",
+          "RGPI": "0.6799 ± 0.0182"
+        }
+      },
+      {
+        "region": "Whole",
+        "method": "Trans-SAR",
+        "metrics": {
+          "ENL": "127.21",
+          "M-index": "2.6754 ± 0.0978",
+          "EPI": "0.2554 ± 0.0134",
+          "RGPI": "0.1655 ± 0.0376"
+        }
+      },
+      {
+        "region": "Whole",
+        "method": "Ours-base",
+        "metrics": {
+          "ENL": "151.77",
+          "M-index": "2.4582 ± 0.0693",
+          "EPI": "0.5948 ± 0.0721",
+          "RGPI": "0.5479 ± 0.1072"
+        }
+      },
+      {
+        "region": "Whole",
+        "method": "Ours+AMS",
+        "metrics": {
+          "ENL": "36.81",
+          "M-index": "1.4634 ± 0.0827",
+          "EPI": "0.8218 ± 0.0531",
+          "RGPI": "0.7526 ± 0.0623"
+        }
+      }
+    ],
+    "VI": [
+      {
+        "region": "Homogeneous",
+        "method": "Noisy",
+        "metrics": {
+          "ENL": "28.23",
+          "M-index": "—",
+          "EPI": "1.0000 ± 0.0000",
+          "RGPI": "0.2874 ± 0.0391"
+        }
+      },
+      {
+        "region": "Homogeneous",
+        "method": "Ours-base",
+        "metrics": {
+          "ENL": "213.34",
+          "M-index": "6.3421 ± 0.6387",
+          "EPI": "0.5347 ± 0.0782",
+          "RGPI": "0.1197 ± 0.0121"
+        }
+      },
+      {
+        "region": "Homogeneous",
+        "method": "Ours+AMS",
+        "metrics": {
+          "ENL": "46.23",
+          "M-index": "3.4524 ± 0.4129",
+          "EPI": "0.7538 ± 0.0917",
+          "RGPI": "0.1672 ± 0.0092"
+        }
+      },
+      {
+        "region": "Structural",
+        "method": "Noisy",
+        "metrics": {
+          "ENL": "21.39",
+          "M-index": "—",
+          "EPI": "1.0000 ± 0.0000",
+          "RGPI": "0.4532 ± 0.1129"
+        }
+      },
+      {
+        "region": "Structural",
+        "method": "Ours-base",
+        "metrics": {
+          "ENL": "189.23",
+          "M-index": "1.2376 ± 0.0928",
+          "EPI": "0.4391 ± 0.0283",
+          "RGPI": "0.1576 ± 0.0298"
+        }
+      },
+      {
+        "region": "Structural",
+        "method": "Ours+AMS",
+        "metrics": {
+          "ENL": "39.66",
+          "M-index": "0.7821 ± 0.0273",
+          "EPI": "0.6467 ± 0.0812",
+          "RGPI": "0.3961 ± 0.0737"
+        }
+      },
+      {
+        "region": "Textured",
+        "method": "Noisy",
+        "metrics": {
+          "ENL": "13.43",
+          "M-index": "—",
+          "EPI": "1.0000 ± 0.0000",
+          "RGPI": "0.6526 ± 0.1023"
+        }
+      },
+      {
+        "region": "Textured",
+        "method": "Ours-base",
+        "metrics": {
+          "ENL": "173.56",
+          "M-index": "0.2478 ± 0.0465",
+          "EPI": "0.3598 ± 0.0762",
+          "RGPI": "0.2425 ± 0.0283"
+        }
+      },
+      {
+        "region": "Textured",
+        "method": "Ours+AMS",
+        "metrics": {
+          "ENL": "31.82",
+          "M-index": "0.0635 ± 0.0127",
+          "EPI": "0.7122 ± 0.0823",
+          "RGPI": "0.4913 ± 0.0884"
+        }
+      },
+      {
+        "region": "Average",
+        "method": "Noisy",
+        "metrics": {
+          "ENL": "21.02",
+          "M-index": "—",
+          "EPI": "1.0000 ± 0.0000",
+          "RGPI": "0.4644 ± 0.0632"
+        }
+      },
+      {
+        "region": "Average",
+        "method": "Ours-base",
+        "metrics": {
+          "ENL": "192.04",
+          "M-index": "2.6092 ± 0.1943",
+          "EPI": "0.4445 ± 0.0209",
+          "RGPI": "0.1733 ± 0.0134"
+        }
+      },
+      {
+        "region": "Average",
+        "method": "Ours+AMS",
+        "metrics": {
+          "ENL": "39.24",
+          "M-index": "1.4327 ± 0.1343",
+          "EPI": "0.7042 ± 0.0286",
+          "RGPI": "0.3515 ± 0.0351"
+        }
+      }
+    ]
+  },
+  "changed_cells": [
+    {
+      "table": "V",
+      "region": "Whole",
+      "method": "SAR-BM3D",
+      "metric": "EPI",
+      "source": "0.8076 ± 0.1023",
+      "old": "\\(\\underline{0.808}{\\pm}0.002\\)",
+      "new": "\\(\\underline{0.808}{\\pm}0.102\\)"
+    },
+    {
+      "table": "V",
+      "region": "Whole",
+      "method": "SDUDNet",
+      "metric": "M-index",
+      "source": "1.6571 ± 0.0532",
+      "old": "\\(\\underline{1.657}{\\pm}0.003\\)",
+      "new": "\\(\\underline{1.657}{\\pm}0.053\\)"
+    },
+    {
+      "table": "V",
+      "region": "Whole",
+      "method": "Trans-SAR",
+      "metric": "M-index",
+      "source": "2.6754 ± 0.0978",
+      "old": "\\(2.675{\\pm}0.008\\)",
+      "new": "\\(2.675{\\pm}0.098\\)"
+    },
+    {
+      "table": "V",
+      "region": "Whole",
+      "method": "Trans-SAR",
+      "metric": "RGPI",
+      "source": "0.1655 ± 0.0376",
+      "old": "\\(0.166{\\pm}0.088\\) \\\\",
+      "new": "\\(0.166{\\pm}0.038\\) \\\\"
+    },
+    {
+      "table": "V",
+      "region": "Whole",
+      "method": "Ours-base",
+      "metric": "M-index",
+      "source": "2.4582 ± 0.0693",
+      "old": "\\(2.458{\\pm}0.059\\)",
+      "new": "\\(2.458{\\pm}0.069\\)"
+    },
+    {
+      "table": "V",
+      "region": "Whole",
+      "method": "Ours+AMS",
+      "metric": "M-index",
+      "source": "1.4634 ± 0.0827",
+      "old": "\\(\\mathbf{1.463}{\\pm}0.013\\)",
+      "new": "\\(\\mathbf{1.463}{\\pm}0.083\\)"
+    },
+    {
+      "table": "V",
+      "region": "Whole",
+      "method": "Ours+AMS",
+      "metric": "EPI",
+      "source": "0.8218 ± 0.0531",
+      "old": "\\(\\mathbf{0.822}{\\pm}0.023\\)",
+      "new": "\\(\\mathbf{0.822}{\\pm}0.053\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Homogeneous",
+      "method": "Ours-base",
+      "metric": "M-index",
+      "source": "6.3421 ± 0.6387",
+      "old": "\\(6.342{\\pm}0.039\\)",
+      "new": "\\(6.342{\\pm}0.639\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Homogeneous",
+      "method": "Ours-base",
+      "metric": "EPI",
+      "source": "0.5347 ± 0.0782",
+      "old": "\\(0.535{\\pm}0.018\\)",
+      "new": "\\(0.535{\\pm}0.078\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Homogeneous",
+      "method": "Ours-base",
+      "metric": "RGPI",
+      "source": "0.1197 ± 0.0121",
+      "old": "\\(0.120{\\pm}0.082\\) \\\\",
+      "new": "\\(0.120{\\pm}0.012\\) \\\\"
+    },
+    {
+      "table": "VI",
+      "region": "Homogeneous",
+      "method": "Ours+AMS",
+      "metric": "M-index",
+      "source": "3.4524 ± 0.4129",
+      "old": "\\(\\mathbf{3.452}{\\pm}0.013\\)",
+      "new": "\\(\\mathbf{3.452}{\\pm}0.413\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Homogeneous",
+      "method": "Ours+AMS",
+      "metric": "EPI",
+      "source": "0.7538 ± 0.0917",
+      "old": "\\(\\mathbf{0.754}{\\pm}0.002\\)",
+      "new": "\\(\\mathbf{0.754}{\\pm}0.092\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Structural",
+      "method": "Ours-base",
+      "metric": "RGPI",
+      "source": "0.1576 ± 0.0298",
+      "old": "\\(0.158{\\pm}0.020\\) \\\\",
+      "new": "\\(0.158{\\pm}0.030\\) \\\\"
+    },
+    {
+      "table": "VI",
+      "region": "Structural",
+      "method": "Ours+AMS",
+      "metric": "EPI",
+      "source": "0.6467 ± 0.0812",
+      "old": "\\(\\mathbf{0.647}{\\pm}0.011\\)",
+      "new": "\\(\\mathbf{0.647}{\\pm}0.081\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Structural",
+      "method": "Ours+AMS",
+      "metric": "RGPI",
+      "source": "0.3961 ± 0.0737",
+      "old": "\\(\\mathbf{0.396}{\\pm}0.004\\) \\\\",
+      "new": "\\(\\mathbf{0.396}{\\pm}0.074\\) \\\\"
+    },
+    {
+      "table": "VI",
+      "region": "Textured",
+      "method": "Ours-base",
+      "metric": "M-index",
+      "source": "0.2478 ± 0.0465",
+      "old": "\\(0.248{\\pm}0.087\\)",
+      "new": "\\(0.248{\\pm}0.047\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Textured",
+      "method": "Ours+AMS",
+      "metric": "M-index",
+      "source": "0.0635 ± 0.0127",
+      "old": "\\(\\mathbf{0.064}{\\pm}0.073\\)",
+      "new": "\\(\\mathbf{0.064}{\\pm}0.013\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Textured",
+      "method": "Ours+AMS",
+      "metric": "RGPI",
+      "source": "0.4913 ± 0.0884",
+      "old": "\\(\\mathbf{0.491}{\\pm}0.008\\) \\\\",
+      "new": "\\(\\mathbf{0.491}{\\pm}0.088\\) \\\\"
+    },
+    {
+      "table": "VI",
+      "region": "Average",
+      "method": "Ours-base",
+      "metric": "M-index",
+      "source": "2.6092 ± 0.1943",
+      "old": "\\(2.609{\\pm}0.064\\)",
+      "new": "\\(2.609{\\pm}0.194\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Average",
+      "method": "Ours-base",
+      "metric": "RGPI",
+      "source": "0.1733 ± 0.0134",
+      "old": "\\(0.173{\\pm}0.028\\) \\\\",
+      "new": "\\(0.173{\\pm}0.013\\) \\\\"
+    },
+    {
+      "table": "VI",
+      "region": "Average",
+      "method": "Ours+AMS",
+      "metric": "M-index",
+      "source": "1.4327 ± 0.1343",
+      "old": "\\(\\mathbf{1.433}{\\pm}0.021\\)",
+      "new": "\\(\\mathbf{1.433}{\\pm}0.134\\)"
+    },
+    {
+      "table": "VI",
+      "region": "Average",
+      "method": "Ours+AMS",
+      "metric": "RGPI",
+      "source": "0.3515 ± 0.0351",
+      "old": "\\(\\mathbf{0.352}{\\pm}0.005\\) \\\\",
+      "new": "\\(\\mathbf{0.352}{\\pm}0.035\\) \\\\"
+    }
+  ],
+  "recomputed_experiment_statistics": false
+}

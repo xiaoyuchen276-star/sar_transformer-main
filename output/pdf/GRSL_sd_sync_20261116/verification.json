@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-16",
+  "source": "latest author-updated Markdown table",
+  "source_md_sha256": "028540b8800563ff8d999ab7f3cc3269955b1aab9b836d2c8f0b54fba0ac3ff6",
+  "numeric_SD_cells_updated": 22,
+  "page_counts": {
+    "Clean": 5,
+    "Marked": 5
+  },
+  "checks": {
+    "Clean_table_V_all_rows_match_MD": true,
+    "Clean_table_V_mean_sd_cells_checked": 20,
+    "Clean_table_VI_all_rows_match_MD": true,
+    "Clean_table_VI_mean_sd_cells_checked": 32,
+    "Marked_table_V_all_rows_match_MD": true,
+    "Marked_table_V_mean_sd_cells_checked": 20,
+    "Marked_table_VI_all_rows_match_MD": true,
+    "Marked_table_VI_mean_sd_cells_checked": 32,
+    "clean_marked_body_text_identical": true,
+    "tables_I_to_IV_unchanged": true,
+    "equations_unchanged": 9,
+    "body_statistics_match_latest_summary": true,
+    "ENL_mean_only": true,
+    "Clean_no_overfull_boxes_or_undefined_references": true,
+    "Marked_no_overfull_boxes_or_undefined_references": true,
+    "first_three_pages_text_unchanged": true
+  },
+  "statistical_recomputation_performed": false,
+  "CI_and_p_values": "retained from latest author-confirmed Markdown; no raw scene-level observations available",
+  "visual_review": {
+    "all_pages_reviewed": true,
+    "modified_pages_inspected_at_full_size": [
+      4,
+      5
+    ],
+    "clean_and_marked_layout": "no clipping, overlaps, or table overflow; both remain five pages"
+  },
+  "sha256": {
+    "GRSL_paper_revised.pdf": "7b263bae38098bb3a20d133ce269c58da01a7861c9f319e9672fa8e4fa2eac76",
+    "GRSL-02805-2026_Revised_Marked.pdf": "2166b05682bdf668d753eb7ef12470761f5f58d00b8ae8923641149480bb23bc"
+  },
+  "source_tex_sha256": "7df9adcc327899fc985a6df88e24c433c6ca55f9d1808a274edda5ddabf22686"
+}
